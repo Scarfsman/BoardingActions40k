@@ -1051,7 +1051,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </costs>
       <infoLinks>
         <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="911a-7f32-c2aa-6b3c" targetId="eeb6-c42-48f7-cc21"/>
-        <infoLink name="Forming Boarding Squads" id="d42c-5de1-a2af-ea0c" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
+        <infoLink name="Form Boarding Squads" id="aa9d-707a-6132-dbf6" hidden="false" type="profile" targetId="c809-5a6c-4308-0d67"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c97d-9778-adf5-45f9" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
@@ -2587,7 +2587,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
           </selectionEntries>
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9b06-df93-4d7-e459"/>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a9e8-f417-7e03-1cf4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9e8-f417-7e03-1cf4"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Special Weapons (0-3)" hidden="false" id="164e-67ca-e0bb-4c42">
@@ -3532,6 +3532,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
+        <profile name="Form Boarding Squads" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="418c-0dc3-57fd-f94b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Form Boarding Squads step, a KROOT FARSTALKERS unit is split into two Boarding Squads, each containing 6 models.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="69df-ed38-2bef-60d6"/>
@@ -3997,11 +4002,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule name="Form Boaring Squads" id="2136-737e-f925-52b5" hidden="false">
-          <description>In the Form Boarding Squads step, a KROOT FARSTALKERS unit is split into two Boarding Squads, each containing 6 models.</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kroot pistol" hidden="false" id="591e-d6ae-6069-c203" collective="true">
       <profiles>
@@ -9398,10 +9398,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Rules Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c809-5a6c-4308-0d67">
+    <profile name="Form Boarding Squads" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c809-5a6c-4308-0d67">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">FIRE WARRIOR units that do not contain a Fire Warrior Shas’ui or Breacher Fire Warrior Shas’ui model after you have formed Boarding Squads lose the MARKERLIGHT keyword.</characteristic>
       </characteristics>
+      <comment>Fire Warrrios</comment>
     </profile>
   </sharedProfiles>
   <catalogueLinks>
