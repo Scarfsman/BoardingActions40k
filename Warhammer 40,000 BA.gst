@@ -1035,7 +1035,7 @@ If no models in a target unit are visible to the attacking unit when you select 
     <rule id="5edf-d619-23e0-9b56" name="Torrent" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
       <description>Weapons with **[TORRENT]** in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.</description>
     </rule>
-    <rule id="ada6-bac1-ffe0-d6f7" name="Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
+    <rule id="" name="Scouts" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
       <description>All units lose the Scouts ability and cannot gain it through any means.</description>
       <comment>ada6-bac1-ffe0-d6f7</comment>
     </rule>
