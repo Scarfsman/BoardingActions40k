@@ -1753,7 +1753,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         </modifier>
         <modifier type="set" value="3" field="50d7-8a49-d850-e856">
           <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="3" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3409,9 +3409,24 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="3" field="77cc-c844-3bf3-c836">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="2" field="77cc-c844-3bf3-c836">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="77cc-c844-3bf3-c836">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="77cc-c844-3bf3-c836"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="77cc-c844-3bf3-c836"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="fbad-3ffe-92a8-021e" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8e52-0430-84fc-c8c2" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="24f3-2661-f32e-2f58" includeChildSelections="true"/>
@@ -3517,7 +3532,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="69df-ed38-2bef-60d6"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="69df-ed38-2bef-60d6"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="15f9-07e8-81ba-5197" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="2378-94a6-ab81-90cb" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b665-b9fc-6d57-1b3b" includeChildSelections="true"/>
@@ -3962,6 +3977,21 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
               <comment>Kroot boarding party</comment>
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="69df-ed38-2bef-60d6">
+          <conditions>
+            <condition type="atLeast" value="3" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="2" field="69df-ed38-2bef-60d6">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="69df-ed38-2bef-60d6">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="d631-3ca5-e206-4e6a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
