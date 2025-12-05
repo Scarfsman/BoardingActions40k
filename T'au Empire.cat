@@ -945,6 +945,15 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pulse pistol" hidden="false" id="4310-a1ce-dde7-70e3" collective="true">
       <comment>BS4+</comment>
@@ -1185,6 +1194,15 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kroot Carnivores" hidden="false" id="d631-3ca5-e206-4e6a">
       <categoryLinks>
@@ -1235,7 +1253,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="d1b8-fec4-ffa4-abc4" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="9-19 Kroot Carnivores" hidden="false" id="ffa0-1e36-cf92-af41" defaultSelectionEntryId="777-6211-bea1-526d" sortIndex="3">
+        <selectionEntryGroup name="Kroot Carnivores" hidden="false" id="ffa0-1e36-cf92-af41" defaultSelectionEntryId="777-6211-bea1-526d" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Kroot Carnivores" hidden="false" id="777-6211-bea1-526d" collective="false">
               <constraints>
@@ -1306,7 +1324,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="932e-ffcc-e5c6-8cce"/>
           </constraints>
         </selectionEntryGroup>
@@ -2402,12 +2420,12 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pathfinder Team" hidden="false" id="2598-d700-9952-e439">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="5a34-8a0e-b187-b205" primary="true" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="5a34-8a0e-b187-b205" primary="false" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e6f0-e823-1286-d639" primary="false" name="Grenades"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="24ba-af0c-f9b6-cda7" primary="false" name="Markerlight"/>
         <categoryLink targetId="c3af-6e36-252c-1006" id="f4a0-3777-fb6a-aaf5" primary="false" name="Pathfinder Team"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a3c5-e9f0-6643-5053" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="ad30-26e6-91e5-50ec" primary="false" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="80ca-160c-b8b4-5749" primary="true" name="You can include up to three of each of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Target Uploaded" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85b7-6da7-e356-82e5">
@@ -2596,7 +2614,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           </selectionEntries>
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9b06-df93-4d7-e459"/>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a9e8-f417-7e03-1cf4"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a9e8-f417-7e03-1cf4"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Special Weapons (0-3)" hidden="false" id="164e-67ca-e0bb-4c42">
@@ -3056,6 +3074,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             <condition type="atLeast" value="6" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="0541-fb61-7cd7-43b2" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
@@ -3261,7 +3286,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </selectionEntries>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7b4f-7b20-f7f4-2da7" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d549-49a4-1858-cf31" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d549-49a4-1858-cf31" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3503,240 +3528,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Tidewall Shieldline" hidden="false" id="1d72-cdbd-796f-7c0d">
-      <categoryLinks>
-        <categoryLink targetId="19d7-9c74-2140-5851" id="ddd0-a8fc-cc68-1dd2" primary="true" name="Fortification"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="93b0-6ca3-ab28-7355" primary="false" name="Vehicle"/>
-        <categoryLink targetId="75e8-57c4-40e3-1817" id="9f81-e43f-9741-8422" primary="false" name="Transport"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="dfa-c39e-8284-cdb9" primary="false" name="Fly"/>
-        <categoryLink targetId="88d1-d0ab-d5a7-48f2" id="43ce-9c06-75bc-a3c6" primary="false" name="Tidewall Shieldline"/>
-        <categoryLink targetId="3d58-2655-391e-ecc" id="d60e-19d8-bb8-7eb" primary="false" name="Faction: T&apos;au Empire"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="156-cb5a-c060-4570"/>
-      </constraints>
-      <profiles>
-        <profile name="Tidewall Shieldline" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f60e-82ae-5ab1-21f9">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">4&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="15" field="750a-a2ec-90d3-21fe">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="1d72-cdbd-796f-7c0d" childId="71fb-3e7-db6c-356e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
-        <profile name="Tidewall Shieldline" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="ca95-3b9e-2fbb-1bac">
-          <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 11 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models. If this model is equipped with a Tidewall defence platform, it has a transport capacity of 22 T’AU INFANTRY models instead.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="e196-7e41-940-f35d" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D3" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Fortification" hidden="false" type="profile" id="c330-a0c2-f9b7-f580" targetId="fa4e-5ac8-11a6-78d2"/>
-        <infoLink name="Firing Deck" hidden="false" type="rule" id="5931-7dbb-2912-828f" targetId="13b2-6518-dab3-7ea1">
-          <modifiers>
-            <modifier type="append" value="20" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Invulnerable Save (5+)" hidden="false" type="profile" id="7a39-b569-49be-c6a9" targetId="27f4-7449-a636-ae8c"/>
-        <infoLink name="Tidewall Cover" hidden="false" type="profile" id="cb70-84fb-7cef-c4be" targetId="2050-72df-fd02-7085"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Tidewall Defence Platform" hidden="false" id="2242-757b-d426-900">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tidewall Defence Platform" hidden="false" id="71fb-3e7-db6c-356e">
-              <profiles>
-                <profile name="Tidewall Defence Platform" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6769-2de7-81ba-2a99">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If equipped with a Tidewall defence platform, this FORTIFICATION has a Wounds characteristic of 15.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70e7-5676-165e-c6b5"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Tidewall Droneport" hidden="false" id="af7f-fc61-e9c0-6a7e">
-      <profiles>
-        <profile name="Tidewall Droneport" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5799-a1a2-f1ec-9054">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">4&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
-        <profile name="Droneport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="81a0-c679-23bd-77e3">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this FORTIFICATION is selected to shoot, its drone defenders weapon will target and resolve attacks against every enemy unit that is an eligible target to this FORTIFICATION.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Tidewall Droneport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="a334-a990-143d-fe61">
-          <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 11 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="47d9-739a-4797-a376"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="19d7-9c74-2140-5851" id="30a0-2aef-435c-8de4" primary="true" name="Fortification"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="42b5-f2d2-f4dc-37d4" primary="false" name="Vehicle"/>
-        <categoryLink targetId="75e8-57c4-40e3-1817" id="e175-e319-5db5-c910" primary="false" name="Transport"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="54da-8c35-d861-486d" primary="false" name="Fly"/>
-        <categoryLink targetId="3d58-2655-391e-ecc" id="c8e2-c38e-e0a9-6466" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="b7a-b0ee-a2ae-e54" id="b9db-97ba-fb5-ff75" primary="false" name="Tidewall Droneport"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="1721-c492-644-2915" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D3" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Firing Deck" hidden="false" type="rule" id="4857-f30e-179-5832" targetId="13b2-6518-dab3-7ea1">
-          <modifiers>
-            <modifier type="append" value="11" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Fortification" hidden="false" type="profile" id="85ce-a14d-3f70-913a" targetId="fa4e-5ac8-11a6-78d2"/>
-        <infoLink name="Tidewall Cover" hidden="false" type="profile" id="9c4f-f0ea-8b64-3f3c" targetId="2050-72df-fd02-7085"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Drone defenders" hidden="false" id="b35e-e7b3-244b-87d4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64a5-e9e7-48b7-81c2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92ba-5711-9b2a-9434"/>
-          </constraints>
-          <profiles>
-            <profile name="Drone defenders" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="545c-9dc3-f9f6-e5a4">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">20&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Twin-linked</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Assault" hidden="false" type="rule" id="8deb-e3ec-b055-81de" targetId="fc8a-8c24-bae9-cc1c"/>
-            <infoLink name="Twin-linked" hidden="false" type="rule" id="92ab-e669-e979-6cde" targetId="cf93-ad4d-2f08-a79d"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Tidewall Gunrig" hidden="false" id="e412-ea81-6767-9974">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1baa-b19f-827d-d55e"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="19d7-9c74-2140-5851" id="6936-615f-1c45-8cb6" primary="true" name="Fortification"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="fe3d-5cca-2118-afe" primary="false" name="Vehicle"/>
-        <categoryLink targetId="75e8-57c4-40e3-1817" id="2332-8490-d5ee-7e9f" primary="false" name="Transport"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="cf2-b909-63af-9a30" primary="false" name="Fly"/>
-        <categoryLink targetId="5151-516e-3ecc-8b51" id="f49b-7753-ba48-8f8e" primary="false" name="Tidewall Gunrig"/>
-        <categoryLink targetId="3d58-2655-391e-ecc" id="2f0-5c6-a45d-2759" primary="false" name="Faction: T&apos;au Empire"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Tidewall Gunrig" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="99db-d097-be48-6768">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">4&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">14</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
-        <profile name="Tidewall Gunrig" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="4cc0-bf88-84f5-c52b">
-          <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 11 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Firing Deck" hidden="false" type="rule" id="4269-bcd2-ec5d-b80f" targetId="13b2-6518-dab3-7ea1">
-          <modifiers>
-            <modifier type="append" value="11" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="275e-f53d-c555-72b" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D3" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Fortification" hidden="false" type="profile" id="3e7f-60bf-7234-da32" targetId="fa4e-5ac8-11a6-78d2"/>
-        <infoLink name="Tidewall Cover" hidden="false" type="profile" id="9fdd-4bad-bd51-7e70" targetId="2050-72df-fd02-7085"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Supremacy railgun" hidden="false" id="d7a2-80bc-2153-95af">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64a5-e9e7-48b7-81c2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92ba-5711-9b2a-9434"/>
-          </constraints>
-          <profiles>
-            <profile name="Supremacy railgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8ebc-c5f1-9125-6295">
-              <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                <characteristic name="S" typeId="2229-f494-25db-c5d3">20</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-5</characteristic>
-                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+6</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Twin-linked</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Devastating Wounds" hidden="false" type="rule" id="bb09-4949-3109-341c" targetId="be1e-ac8e-1e2c-3528"/>
-            <infoLink name="Twin-linked" hidden="false" type="rule" id="b59d-4f86-e32e-c820" targetId="cf93-ad4d-2f08-a79d"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kroot Farstalkers" hidden="false" id="72f2-7d0b-80f9-43b7">
       <profiles>
@@ -4126,11 +3917,12 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8494-5566-a1f6-a81b" primary="true" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8494-5566-a1f6-a81b" primary="false" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="efc9-eaa2-225b-7e31" primary="false" name="Grenades"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="eceb-d043-20a4-26a5" primary="false" name="Kroot"/>
         <categoryLink targetId="d4bd-9928-e74e-9605" id="496e-ba6d-84c4-ec23" primary="false" name="Farstalkers"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="6135-96b1-45a1-e044" primary="false" name="Faction: T&apos;au Empire"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="5bb8-8208-fb2d-7866" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -4274,211 +4066,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Knarloc Riders [Legends]" hidden="true" id="f4b8-7132-6738-547c">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="f294-2be8-e548-861f"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="8795-78f3-13d4-0527" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7e12-d59e-5859-e8e8" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e5f8-cfef-240d-9aca" includeChildSelections="true"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="14a0-40c9-2748-ae6e" id="f240-1330-5073-2364" primary="true" name="Mounted"/>
-        <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="770e-c52f-6613-f8c4" primary="false" name="Kroot"/>
-        <categoryLink targetId="d40a-20b-185d-cdc2" id="a8d8-76cd-a5b2-d794" primary="false" name="Knarloc Riders"/>
-        <categoryLink targetId="3d58-2655-391e-ecc" id="f913-d678-1ee2-959c" primary="false" name="Faction: T&apos;au Empire"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Knarloc Rider" hidden="false" id="1270-d9b9-d28-b110" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="971b-3f34-661e-97d6"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="54fb-ec62-adf-a5ea"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Knarloc beak and talons" hidden="false" id="2b66-393e-c99-4b8" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1669-eb46-8d6a-94f3"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2370-19a0-f196-9ac7"/>
-              </constraints>
-              <profiles>
-                <profile name="Knarloc beak and talons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9eff-c2c3-1bbf-c888">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Extra Attacks" hidden="false" type="rule" id="8c37-b6a2-d7d9-4ca4" targetId="115b-79dc-f723-d761"/>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="a6e1-d0cc-9df8-79ca" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <categoryLinks>
-                <categoryLink name="Extra Attacks Weapon" hidden="false" id="e3a9-1e6b-ddb5-ad0e" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kroot rifle" hidden="false" id="90cb-5188-ffbe-f2ec" collective="true">
-              <profiles>
-                <profile name="Kroot rifle (Ranged)" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="22ca-06e0-6a94-b736">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Kroot rifle (Melee)" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="bb42-d6d0-f57d-dbc1">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Rapid Fire" id="4ff6-77ac-bcbb-a91c" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c87-e604-6611-d62c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b68c-76e6-aee3-6a8e"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="2dfd-1369-a38c-6716" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-      <profiles>
-        <profile name="Knarloc Riders [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="12b5-67eb-f66d-48a5">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
-      </profiles>
-      <infoGroups>
-        <infoGroup name="Thunderous Pounce" hidden="false" id="8a57-434f-e5e-9e2f">
-          <profiles>
-            <profile name="Thunderous Pounce" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="882a-abc5-f5cf-ae5">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, until the end of the turn, Knarloc beak and talons equipped by models in this unit have the [LANCE] ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Lance" hidden="false" type="rule" id="70e4-61ae-5d26-25e1" targetId="2ebc-abdf-8129-6c57"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-      <infoLinks>
-        <infoLink name="Stealth" hidden="false" type="rule" id="defa-9e6d-e3b6-c934" targetId="bec5-4288-34a6-ccfa"/>
-        <infoLink name="Scouts" hidden="false" type="rule" id="3d30-66b8-fb5b-6b48" targetId="ada6-bac1-ffe0-d6f7">
-          <modifiers>
-            <modifier type="append" value="7&quot;" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
-      </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="97ec-b0a7-c14d-da1a" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
-      </entryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Crusade modifiers</comment>
-          <modifiers>
-            <modifier type="set" value="6" field="8795-78f3-13d4-0527">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="7e12-d59e-5859-e8e8">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="e5f8-cfef-240d-9aca">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditions>
-                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Drone Sentry Turret [Legends]" hidden="false" id="e73d-cdcf-213d-c7eb">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ab26-afb7-30dc-a0a1"/>
@@ -4618,13 +4205,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crisis Sunforge Battlesuits" hidden="false" id="e88f-bc7a-c3f5-8e47">
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="3d8a-22ba-83ac-7272" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="3d8a-22ba-83ac-7272" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="69b8-f285-d97-96a8" primary="false" name="Walker"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="25ae-e171-41b0-1243" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="ed02-7f6a-d72a-2af8" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="8fab-c07f-bfc6-2fb4" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2d94-6def-9a80-4497" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="205d-dcad-4d0-ccae" id="ba40-7585-9328-5e46" primary="false" name="Sunforge"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="91ac-2fb9-e99e-9b9f" primary="true" name="You can include up to one of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Sunforge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="883e-96af-3014-6550">
@@ -4837,13 +4425,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crisis Fireknife Battlesuits" hidden="false" id="9373-d0b3-94c9-e47">
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="db2b-1da9-29de-e77e" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="db2b-1da9-29de-e77e" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="5ed-de59-9c68-3d0c" primary="false" name="Walker"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="4606-6b00-8d2d-b5eb" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="c2af-c390-62fe-4b5e" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="5ee5-4535-217e-6423" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="fc8b-b78b-aaa6-ee4a" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="d372-6d2c-2df2-8e91" id="e62a-b590-b74b-3532" primary="false" name="Fireknife"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="dc1a-ccb3-7a84-73f6" primary="true" name="You can include up to one of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Fireknife" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3d6-87dc-9a02-a9eb">
@@ -5088,13 +4677,14 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crisis Starscythe Battlesuits" hidden="false" id="fb32-c683-b38f-d339">
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="420f-ef0d-9da1-3bbc" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="420f-ef0d-9da1-3bbc" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="2fa-cc72-c2f-d9bb" primary="false" name="Walker"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="4c9d-6ed4-f65c-1084" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="7e3f-ad86-7b12-1900" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="e408-ef89-b30b-e447" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="384-b2b8-b4a7-7a1" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="cd97-19b6-3957-4c78" id="1776-2586-abb5-4ede" primary="false" name="Starscythe"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="9cc0-fdee-bd38-b292" primary="true" name="You can include up to one of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Starscythe" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36a5-3ecd-bc4d-79f">
@@ -7184,24 +6774,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <infoLink name="Devastating Wounds" id="81ff-340e-317f-2f6c" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="High-yield missile pods" hidden="false" id="57c5-a602-9f2e-bd7e" collective="false">
-      <profiles>
-        <profile name="High-yield missile pods" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8193-592f-d90d-9365">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Twin-linked" id="3250-b642-fb7f-2f85" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Support turret" hidden="false" id="25f4-4559-c056-0e4e">
       <profiles>
         <profile name="Support turret" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b3d4-211a-48f8-266e">
@@ -7379,11 +6951,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     <entryLink import="true" name="Pathfinder Team" hidden="false" type="selectionEntry" id="c62a-bda5-844c-e8c6" targetId="2598-d700-9952-e439"/>
     <entryLink import="true" name="Vespid Stingwings" hidden="false" type="selectionEntry" id="fd16-3705-d392-a163" targetId="b91-ba27-3842-76c"/>
     <entryLink import="true" name="Kroot Hounds" hidden="false" type="selectionEntry" id="9080-347f-a193-a87e" targetId="6883-85aa-b338-b88"/>
-    <entryLink import="true" name="Tidewall Shieldline" hidden="false" type="selectionEntry" id="ccdd-dd99-2db3-bcad" targetId="1d72-cdbd-796f-7c0d"/>
-    <entryLink import="true" name="Tidewall Droneport" hidden="false" type="selectionEntry" id="f809-4387-ed6f-16ef" targetId="af7f-fc61-e9c0-6a7e"/>
-    <entryLink import="true" name="Tidewall Gunrig" hidden="false" type="selectionEntry" id="bf6c-669e-7c86-b731" targetId="e412-ea81-6767-9974"/>
     <entryLink import="true" name="Kroot Farstalkers" hidden="false" type="selectionEntry" id="3f15-c0c4-5df4-fed9" targetId="72f2-7d0b-80f9-43b7"/>
-    <entryLink import="true" name="Knarloc Riders [Legends]" hidden="false" type="selectionEntry" id="69d0-e48-1c2d-e62f" targetId="f4b8-7132-6738-547c"/>
     <entryLink import="true" name="Drone Sentry Turret [Legends]" hidden="false" type="selectionEntry" id="4023-8c9b-fc41-ad46" targetId="e73d-cdcf-213d-c7eb"/>
     <entryLink import="true" name="Show/Hide Options" hidden="false" type="selectionEntry" id="4a3a-941b-fee2-69ca" targetId="e8ef-836a-a9d1-901d"/>
     <entryLink import="true" name="Crisis Sunforge Battlesuits" hidden="false" id="a73a-a9dc-15ab-d9a2" type="selectionEntry" targetId="e88f-bc7a-c3f5-8e47"/>

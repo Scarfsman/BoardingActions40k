@@ -459,7 +459,7 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
-    <categoryEntry name="You Can Select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="false">
+    <categoryEntry name="You can select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="false">
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
@@ -467,6 +467,7 @@
     <categoryEntry name="You can include up to three of each of the following units" id="6ebf-4f84-bed1-f067" hidden="false"/>
     <categoryEntry name="You can include up to one of each of the following units" id="6f05-f221-113f-3771" hidden="false"/>
     <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" id="bddf-cba5-fce4-c27b" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units" id="e8c2-b45c-5c10-15cc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -507,6 +508,11 @@
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
         <categoryLink name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" hidden="false" id="4c2a-b0f1-01f2-56a8" targetId="bddf-cba5-fce4-c27b"/>
+        <categoryLink name="You can include up to one of the following units" hidden="false" id="4b00-95e6-2296-f6b8" targetId="e8c2-b45c-5c10-15cc">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="5479-b3ac-a01b-9eb3" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
