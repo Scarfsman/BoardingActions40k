@@ -355,7 +355,7 @@
     <categoryEntry name="Armiger" id="4c40-ab9-54af-d290" hidden="false"/>
     <categoryEntry name="Questoris" id="e4d6-1a77-132b-f39d"/>
     <categoryEntry name="Dominus" id="af4c-b971-a31c-669c"/>
-    <categoryEntry name="Allied Units" hidden="false" id="887b-ab87-92a2-20f5">
+    <categoryEntry name="Allied Units" hidden="true" id="887b-ab87-92a2-20f5">
       <modifiers>
         <modifier type="set" value="Brood Brothers" field="name">
           <conditions>

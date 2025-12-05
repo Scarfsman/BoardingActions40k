@@ -132,11 +132,12 @@ Until the end of the phase, each time a model from your army in a Guided unit m
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="87ae-feba-8d76-aeb4" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="7ddf-8930-839c-20a2" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="7ddf-8930-839c-20a2" primary="false" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="8a9f-548-894a-236a" primary="false" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="110e-2c9f-cf-7f84" primary="false" name="Grenades"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1465-1097-98fc-5e80" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="5035-d8d0-822b-e2c" id="09ba-a2a8-e3df-126a" primary="false" name="Cadre Fireblade"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="5bb7-8d28-53af-2c3b" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="25ae-b1b2-69c-d031">
@@ -306,6 +307,15 @@ Until the end of the phase, each time a model from your army in a Guided unit m
           <comment>Crusade Modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ethereal" hidden="false" id="5e66-6f0-a181-cc4d">
       <entryLinks>
@@ -324,6 +334,13 @@ Until the end of the phase, each time a model from your army in a Guided unit m
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="46f7-5671-5d1a-2a5b"/>
@@ -332,10 +349,11 @@ Until the end of the phase, each time a model from your army in a Guided unit m
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="585f-fd61-ea93-13ff" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="576f-939c-11d1-4d0b" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="576f-939c-11d1-4d0b" primary="false" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="fc08-b767-7db5-2bc8" primary="false" name="Infantry"/>
         <categoryLink targetId="e6e-aad6-ee91-7c3c" id="4b91-31f8-9a09-7aba" primary="false" name="Ethereal"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="5afa-8691-8230-d288" primary="false" name="Faction: T&apos;au Empire"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="44f9-9bce-9b28-a043" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Ethereal" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="eb0c-e2d4-1b25-e480">
@@ -535,11 +553,12 @@ Until the end of the phase, each time a model from your army in a Guided unit m
     <selectionEntry type="model" import="true" name="Darkstrider" hidden="false" id="a0f5-5934-1570-5a21">
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="4c30-4908-b2ab-2a1b" primary="false" name="Character"/>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4430-316f-e7e4-ca69" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4430-316f-e7e4-ca69" primary="false" name="Epic Hero"/>
         <categoryLink targetId="7c8a-6776-cffe-f59c" id="ebba-48f8-f81d-fdac" primary="false" name="Darkstrider"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="aefb-903f-5770-8377" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="7112-1cb3-bebe-80a2" primary="false" name="Markerlight"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6b10-9998-7e32-b888" primary="false" name="Infantry"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="54d8-2501-40a5-b638" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Darkstrider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="815c-4d84-672e-8f6e">
@@ -636,6 +655,15 @@ Until the end of the phase, each time a model from your army in a Guided unit m
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Strike Team" hidden="false" id="acdd-2901-1a75-99f4" collective="false">
       <profiles>
@@ -1688,6 +1716,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <modifier type="set" value="90" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="3" field="selections" scope="self" childId="model" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -3343,6 +3378,13 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <condition type="greaterThan" value="5" field="selections" scope="6883-85aa-b338-b88" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="77cc-c844-3bf3-c836"/>
@@ -4125,6 +4167,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kroot pistol" hidden="false" id="591e-d6ae-6069-c203" collective="true">
       <profiles>
@@ -4736,6 +4787,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crisis Fireknife Battlesuits" hidden="false" id="9373-d0b3-94c9-e47">
       <categoryLinks>
@@ -4978,6 +5038,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crisis Starscythe Battlesuits" hidden="false" id="fb32-c683-b38f-d339">
       <categoryLinks>
@@ -5221,6 +5290,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kroot Trail Shaper" hidden="false" id="2ebe-a524-656d-7f0e">
       <categoryLinks>
@@ -5416,6 +5494,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kroot War Shaper" hidden="false" id="e9bc-7a6e-322c-87fd">
       <categoryLinks>
@@ -5626,7 +5713,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="55d7-0c34-c1d4-922d" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="c1c8-eb46-c3a0-4697" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="b880-77d1-0f3c-d63b" includeChildSelections="true"/>
-        <constraint type="max" value="2" field="selections" scope="49ba-7095-f08c-bc51" shared="true" id="f43a-8079-2709-5fd4"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
@@ -5699,6 +5785,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kroot Flesh Shaper" hidden="false" id="bb34-e371-33ee-397">
       <categoryLinks>
