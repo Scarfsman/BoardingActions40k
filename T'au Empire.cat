@@ -3421,203 +3421,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Devilfish" hidden="false" id="14f3-9aa6-21af-7fe3">
-      <profiles>
-        <profile name="Devilfish" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3e4c-15ec-7146-f08">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">13</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-          </attributes>
-        </profile>
-        <profile name="Rapid Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6109-8d9d-d74-423f">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Devilfish" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="cdb4-e0e7-adc0-bb3b">
-          <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 T’AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="11c8-5029-355e-f61b" primary="false" name="Vehicle"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="9f56-c43b-25af-d927" primary="false" name="Fly"/>
-        <categoryLink targetId="75e8-57c4-40e3-1817" id="42a0-1e3d-357c-266b" primary="false" name="Transport"/>
-        <categoryLink targetId="ba07-411c-2832-1f79" id="f9d-b44f-2b7d-b9ff" primary="true" name="Dedicated Transport"/>
-        <categoryLink targetId="9b0-3c53-1484-3843" id="3b36-c860-a82e-ac12" primary="false" name="Devilfish"/>
-        <categoryLink targetId="3d58-2655-391e-ecc" id="b447-953f-7fec-62bf" primary="false" name="Faction: T&apos;au Empire"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="11f6-21f7-a6d1-b192" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D3" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="16ce-784f-e1ca-8b9" targetId="eeb6-c42-48f7-cc21"/>
-      </infoLinks>
-      <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="4bc0-150e-849b-2e5b"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="d032-4622-af08-f54a" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="7c23-5332-0582-c2a9" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="73a1-9a9d-2291-afc4" includeChildSelections="true"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="ab8f-d4c9-7668-7e1d" hidden="false" sortIndex="2">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Twin Pulse Carbines" id="68c8-2849-51dc-b4ea" hidden="false" defaultSelectionEntryId="e2b9-ad4b-5f60-db9e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bab-7708-a473-a043"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e963-32e9-e263-46af"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="2 Twin pulse carbines" hidden="false" id="e2b9-ad4b-5f60-db9e">
-                  <entryLinks>
-                    <entryLink import="true" name="Twin pulse carbine" hidden="false" id="f14e-7d5a-c03d-8222" type="selectionEntry" targetId="f532-7ffd-02fe-6af8">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="11eb-42ca-0bf9-d2a0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4af6-2cf7-3a10-129e"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b128-ac5c-5e32-52ef"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="2 Smart missile systems" hidden="false" id="c669-45e-85aa-4252">
-                  <entryLinks>
-                    <entryLink import="true" name="Smart missile system" hidden="false" id="4628-a243-bc31-7161" type="selectionEntry" targetId="0e88-5a0e-bf04-1937">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="97d5-b8d6-a965-e14e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a5f4-9d6a-c2b9-f7db"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bb17-adf3-4e29-ecd7"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Seeker Missiles (0-2)" id="6366-1f29-9d95-c246" hidden="false">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2295-169d-ea11-40b6"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Seeker missile" hidden="false" id="df4a-aa21-e21b-d510" type="selectionEntry" targetId="3a30-cb51-c88c-255f">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b081-ecab-5c73-3ca8"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="071b-246f-9a57-e2a7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Accelerator burst cannon" hidden="false" id="38d1-28b2-e43f-08da" type="selectionEntry" targetId="e5b9-7fe9-4792-3e31">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb1f-3140-c608-4f38" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd2e-4ea9-4900-95f0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ed5-208b-3ef9-76ce"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Armoured hull" hidden="false" id="344a-8cce-415e-5aba" type="selectionEntry" targetId="f2bd-0132-eee3-7311">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="6210-fb78-2100-a78e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9" flatten="false"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd4-df1d-089d-78a9"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="555c-c386-1943-bc82"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="856d-da03-8f89-4bcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Crusade modifiers</comment>
-          <modifiers>
-            <modifier type="set" value="6" field="d032-4622-af08-f54a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="7c23-5332-0582-c2a9">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="73a1-9a9d-2291-afc4">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditions>
-                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Tidewall Shieldline" hidden="false" id="1d72-cdbd-796f-7c0d">
       <categoryLinks>
         <categoryLink targetId="19d7-9c74-2140-5851" id="ddd0-a8fc-cc68-1dd2" primary="true" name="Fortification"/>
@@ -6128,7 +5931,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>Kroot boarding party</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -7428,59 +7233,23 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="10c6-72f-149d-be4e" primary="true" name="Configuration"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Commander Shadowsun" hidden="false" type="selectionEntry" id="6acb-7f6e-e81b-6b4e" targetId="4d0d-af9d-53c2-bc31"/>
-    <entryLink import="true" name="Commander Farsight" hidden="false" type="selectionEntry" id="b3a8-4106-40fb-3b68" targetId="a67c-e2aa-41d7-e91e"/>
-    <entryLink import="true" name="Commander in Crisis Battlesuit [Legends]" hidden="false" type="selectionEntry" id="24e5-68d6-6823-a46f" targetId="6de0-279f-b471-65ca"/>
-    <entryLink import="true" name="Commander in Enforcer Battlesuit" hidden="false" type="selectionEntry" id="fb91-c605-9c59-19f4" targetId="99fa-35-ba6e-5354"/>
-    <entryLink import="true" name="Commander in Coldstar Battlesuit" hidden="false" type="selectionEntry" id="c756-c2b4-569b-1c8f" targetId="3a73-7255-c639-e89e"/>
     <entryLink import="true" name="Cadre Fireblade" hidden="false" type="selectionEntry" id="d93a-c6f0-ada5-484f" targetId="8f32-9697-ed41-6e3"/>
     <entryLink import="true" name="Ethereal" hidden="false" type="selectionEntry" id="2d33-5fbe-226-ff5b" targetId="5e66-6f0-a181-cc4d"/>
-    <entryLink import="true" name="Aun&apos;va [Legends]" hidden="false" type="selectionEntry" id="e001-5012-2907-2830" targetId="2582-676d-fc9f-c146"/>
-    <entryLink import="true" name="Aun&apos;shi [Legends]" hidden="false" type="selectionEntry" id="3699-199d-4c96-62f3" targetId="8407-585b-76d2-72f3"/>
     <entryLink import="true" name="Darkstrider" hidden="false" type="selectionEntry" id="5545-5dde-9f02-201b" targetId="a0f5-5934-1570-5a21"/>
-    <entryLink import="true" name="Longstrike [Legends]" hidden="false" type="selectionEntry" id="ae7e-80a8-3a65-9fd6" targetId="5bf-16e5-d77b-ea7d"/>
     <entryLink import="true" name="Strike Team" hidden="false" type="selectionEntry" id="ef2-a2c9-729b-61b9" targetId="acdd-2901-1a75-99f4"/>
     <entryLink import="true" name="Breacher Team" hidden="false" type="selectionEntry" id="9d91-f172-1888-50fe" targetId="afc0-2b21-8ddc-3b2a"/>
     <entryLink import="true" name="Kroot Carnivores" hidden="false" type="selectionEntry" id="f28d-8724-b42c-cf62" targetId="d631-3ca5-e206-4e6a"/>
     <entryLink import="true" name="Krootox Riders" hidden="false" type="selectionEntry" id="3b18-6ba8-ae5-513e" targetId="c523-a2e2-a398-ea00"/>
-    <entryLink import="true" name="Crisis Battlesuits [Legends]" hidden="false" type="selectionEntry" id="9df0-1906-bdae-18b4" targetId="de16-2476-9749-b603"/>
     <entryLink import="true" name="Stealth Battlesuits" hidden="false" type="selectionEntry" id="6a15-d9f3-9016-4c3b" targetId="5d3a-803e-7cbc-b2f1"/>
-    <entryLink import="true" name="Ghostkeel Battlesuit" hidden="false" type="selectionEntry" id="9004-87fb-677b-6859" targetId="5268-6e9-8f5c-c810"/>
     <entryLink import="true" name="Firesight Team" hidden="false" type="selectionEntry" id="8c17-3f10-3376-363f" targetId="5fe4-86de-b88c-a47b"/>
     <entryLink import="true" name="Pathfinder Team" hidden="false" type="selectionEntry" id="c62a-bda5-844c-e8c6" targetId="2598-d700-9952-e439"/>
-    <entryLink import="true" name="Piranha" hidden="false" type="selectionEntry" id="b34c-aebf-a559-1ddb" targetId="ad2-6549-8a19-d745"/>
     <entryLink import="true" name="Vespid Stingwings" hidden="false" type="selectionEntry" id="fd16-3705-d392-a163" targetId="b91-ba27-3842-76c"/>
     <entryLink import="true" name="Kroot Hounds" hidden="false" type="selectionEntry" id="9080-347f-a193-a87e" targetId="6883-85aa-b338-b88"/>
-    <entryLink import="true" name="Broadside Battlesuits" hidden="false" type="selectionEntry" id="4247-49bc-8f4c-889f" targetId="a594-317-b90a-a226"/>
-    <entryLink import="true" name="Riptide Battlesuit" hidden="false" type="selectionEntry" id="f797-682a-ac64-c6fd" targetId="5d8f-5530-263d-651b"/>
-    <entryLink import="true" name="Hammerhead Gunship" hidden="false" type="selectionEntry" id="5f-e59d-3d17-8cc5" targetId="ca9-49ab-17c1-8556"/>
-    <entryLink import="true" name="Sky Ray Gunship" hidden="false" type="selectionEntry" id="a643-a68c-d58b-56f0" targetId="bfe0-2e9f-6f57-b48f"/>
-    <entryLink import="true" name="Devilfish" hidden="false" type="selectionEntry" id="dfe-4279-be61-2c72" targetId="14f3-9aa6-21af-7fe3"/>
-    <entryLink import="true" name="Razorshark Strike Fighter" hidden="false" type="selectionEntry" id="c21e-f204-8a12-f1ff" targetId="cac0-2569-67c8-f492"/>
-    <entryLink import="true" name="Sun Shark Bomber" hidden="false" type="selectionEntry" id="274b-2834-a2ee-e578" targetId="8d6a-3409-52db-a8c"/>
     <entryLink import="true" name="Tidewall Shieldline" hidden="false" type="selectionEntry" id="ccdd-dd99-2db3-bcad" targetId="1d72-cdbd-796f-7c0d"/>
     <entryLink import="true" name="Tidewall Droneport" hidden="false" type="selectionEntry" id="f809-4387-ed6f-16ef" targetId="af7f-fc61-e9c0-6a7e"/>
     <entryLink import="true" name="Tidewall Gunrig" hidden="false" type="selectionEntry" id="bf6c-669e-7c86-b731" targetId="e412-ea81-6767-9974"/>
-    <entryLink import="true" name="Stormsurge" hidden="false" type="selectionEntry" id="cc1a-c4b-4647-965a" targetId="439b-e08-4466-e162"/>
-    <entryLink import="true" name="Tactical Drones [Legends]" hidden="false" type="selectionEntry" id="6924-e9e8-f6e2-278b" targetId="f98a-5aa8-9305-2ed"/>
     <entryLink import="true" name="Kroot Farstalkers" hidden="false" type="selectionEntry" id="3f15-c0c4-5df4-fed9" targetId="72f2-7d0b-80f9-43b7"/>
-    <entryLink import="true" name="R&apos;varna Battlesuit [Legends]" hidden="false" type="selectionEntry" id="1d0-8beb-4f5-e1b" targetId="b146-daf1-9b8b-6de9"/>
-    <entryLink import="true" name="Y&apos;vahra Battlesuit [Legends]" hidden="false" type="selectionEntry" id="a152-1c96-4c6a-df06" targetId="8013-c4e0-166e-a961"/>
-    <entryLink import="true" name="Tetras [Legends]" hidden="false" type="selectionEntry" id="4420-1dd1-1f30-4c7" targetId="388f-478b-18f5-aee7"/>
-    <entryLink import="true" name="Remora Stealth Drones [Legends]" hidden="false" type="selectionEntry" id="89d8-6eb-bd0a-6fd6" targetId="f499-f326-8e40-9c8b"/>
-    <entryLink import="true" name="Ta&apos;unar Supremacy Armour" hidden="false" type="selectionEntry" id="bde7-6727-bb4b-b56f" targetId="16d6-79b5-817d-f084"/>
-    <entryLink import="true" name="Barracuda [Legends]" hidden="false" type="selectionEntry" id="5782-6a99-6e19-1424" targetId="a422-6066-1c3a-f021"/>
-    <entryLink import="true" name="Tiger Shark" hidden="false" type="selectionEntry" id="58a6-2a19-49cd-d87" targetId="1c73-43dc-bef0-a468"/>
-    <entryLink import="true" name="AX-1-0 Tiger Shark" hidden="false" type="selectionEntry" id="6aa4-98ad-9598-ef49" targetId="6a78-555-46c7-999b"/>
-    <entryLink import="true" name="Manta" hidden="false" type="selectionEntry" id="fa0-1546-d06a-dc29" targetId="8e75-7545-e43b-7c67"/>
-    <entryLink import="true" name="Orca Dropship [Legends]" hidden="false" type="selectionEntry" id="868e-caf1-64c3-35ee" targetId="49c0-f84c-18c4-6377"/>
-    <entryLink import="true" name="Heavy Gun Drones [Legends]" hidden="false" type="selectionEntry" id="9966-9844-fc59-3434" targetId="f260-c746-b662-cc6c"/>
-    <entryLink import="true" name="Great Knarloc [Legends]" hidden="false" type="selectionEntry" id="5125-f3c1-9827-a516" targetId="a5d9-e739-52b8-731f"/>
-    <entryLink import="true" name="TX42 Piranha [Legends]" hidden="false" type="selectionEntry" id="2b53-7c80-fe3-ebe3" targetId="934d-30ac-34a3-f113"/>
     <entryLink import="true" name="Knarloc Riders [Legends]" hidden="false" type="selectionEntry" id="69d0-e48-1c2d-e62f" targetId="f4b8-7132-6738-547c"/>
-    <entryLink import="true" name="Shas&apos;o R&apos;alai [Legends]" hidden="false" type="selectionEntry" id="fca2-3a2e-b479-d0fc" targetId="96d6-a7f6-cbf-a4c0"/>
-    <entryLink import="true" name="XV9 Hazard Battlesuits [Legends]" hidden="false" type="selectionEntry" id="71cb-df20-abc6-3871" targetId="9b21-52b7-6d8b-3e51"/>
-    <entryLink import="true" name="Remote Sensor Tower [Legends]" hidden="false" type="selectionEntry" id="8a00-f93a-cb2f-60e8" targetId="124e-3391-b646-9777"/>
     <entryLink import="true" name="Drone Sentry Turret [Legends]" hidden="false" type="selectionEntry" id="4023-8c9b-fc41-ad46" targetId="e73d-cdcf-213d-c7eb"/>
     <entryLink import="true" name="Show/Hide Options" hidden="false" type="selectionEntry" id="4a3a-941b-fee2-69ca" targetId="e8ef-836a-a9d1-901d"/>
     <entryLink import="true" name="Crisis Sunforge Battlesuits" hidden="false" id="a73a-a9dc-15ab-d9a2" type="selectionEntry" targetId="e88f-bc7a-c3f5-8e47"/>
@@ -7643,7 +7412,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true">
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
                   <comment>5e2d-92d9-e331-016c
 
 </comment>
@@ -7862,6 +7631,18 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec0-28ce-8730-2f56" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="97bc-1349-fb9d-c04f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Star Fire Cadre Enhancements" hidden="false" id="7d37-ad8e-919a-6563" flatten="false" collapsible="false">
           <selectionEntries>
@@ -8007,7 +7788,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1520-c344-f4fe-b414" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8069,13 +7850,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c76-db9f-f6c4-889a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cc7e-612b-ac7d-c162" shared="false" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -9974,13 +9748,6 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6314-b733-dc0e-1565"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cc7e-612b-ac7d-c162" shared="false" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
