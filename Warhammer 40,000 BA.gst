@@ -473,7 +473,7 @@
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
       <categoryLinks>
         <categoryLink id="d5de-ee57-ad4b-e4b7" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
-        <categoryLink name="You Can Select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
+        <categoryLink name="You can select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
           <comment>You can only</comment>
         </categoryLink>
         <categoryLink name="You can include up to three of each of the following units" hidden="false" id="60ba-8814-26ad-6d99" targetId="6ebf-4f84-bed1-f067"/>
@@ -498,6 +498,10 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="500" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4c6c-e7d0-f2d6-79ef-min" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="500" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4c6c-e7d0-f2d6-79ef-max" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
       <categoryLinks>
@@ -657,7 +661,7 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="4. Boarding Patrol (500 Point Limit)" hidden="false" id="21b-48a5-24c-152c">
+            <selectionEntry type="upgrade" import="true" name="1. Boarding Patrol (500 Point Limit)" hidden="false" id="21b-48a5-24c-152c">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -1008,13 +1012,9 @@ If a model was selected, that unit suffers 3 mortal wounds and when allocating t
 If a unit from a player’s army is selected as the target of the Fire Overwatch Stratagem in their opponent’s Charge phase, any mortal wounds inflicted by Hazardous tests are allocated after the charging unit has ended its Charge move.</description>
     </rule>
     <rule id="b4dd-3e1f-41cb-218f" name="Leader" publicationId="48fc-15aa-b307-9443" page="39" hidden="false">
-      <description>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are destroyed (pg 12), it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack successfully wounds an Attached unit, that attack cannot be allocated to a Character model in that unit, even if that Character model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to Character models in that unit.
+      <description>Units with the Leader ability are normally able to be attached to Bodyguard units, starting the battle as a single unit. In Boarding Actions battles this is not the case - Leaders cannot be attached to Bodyguard units and instead remain as their own independent unit for the entire battle.
 
-Each time the last model in a Bodyguard unit is destroyed, each CHARACTER unit that is part of that Attached unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
-
-Each time the last model in a CHARACTER unit that is attached to a Bodyguard unit is destroyed and there is not another CHARACTER unit attached, that Attached unit’s Bodyguard unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
-
-Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.</description>
+Many Character units have abilities that they confer while attached to a Bodyguard unit, that begin with the phrase ‘while this model is leading a unit’ or ‘while this unit is leading a unit’. Such abilities are called Leader abilities and can still be conferred onto friendly units using the Battlefield Command Stratagem.</description>
     </rule>
     <rule id="be1e-ac8e-1e2c-3528" name="Devastating Wounds" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
       <description>Weapons with **[DEVASTATING WOUNDS]** in their profile are known as Devastating Wounds weapons. Each time an attack is made with such a weapon, if that attack scores a Critical Wound, no saving throw of any kind can be made against that attack (including invulnerable saving throws). Such attacks are only allocated to models after all other attacks made by the attacking unit have been allocated and resolved. After that attack is allocated and after any modifiers are applied, it inflicts a number of mortal wounds on the target equal to the Damage characteristic of that attack, instead of inflicting damage normally.</description>

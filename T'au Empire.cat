@@ -5,7 +5,7 @@
       <description>Units from your army with the For the Greater Good ability lose that ability and T’AU EMPIRE units from your army gain this one.
 
 
-Each time a model in this unit makes a ranged attack, it can ignore other model in this unit for the purpose of determining visibility. In addition, this unit is eligible to perform the Set Overwatch Tactical Manoeuvre in a turn in which it Advanced or Fell Back. </description>
+Each time a model in this unit makes a ranged attack, it can ignore other model in this unit for the purpose of determining visibility. In addition, this unit is eligible to perform the Set Overwatch Tactical Manoeuvre in a turn in which it Advanced or Fell Back.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -134,7 +134,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="110e-2c9f-cf-7f84" primary="false" name="Grenades"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1465-1097-98fc-5e80" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="5035-d8d0-822b-e2c" id="09ba-a2a8-e3df-126a" primary="false" name="Cadre Fireblade"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="5bb7-8d28-53af-2c3b" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="5bb7-8d28-53af-2c3b" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="25ae-b1b2-69c-d031">
@@ -181,7 +181,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
       </costs>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="43d1-f538-3481-387b" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="43d1-f538-3481-387b" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="cadd-8930-5c9d-f2a3" hidden="false" sortIndex="4">
@@ -350,7 +350,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="fc08-b767-7db5-2bc8" primary="false" name="Infantry"/>
         <categoryLink targetId="e6e-aad6-ee91-7c3c" id="4b91-31f8-9a09-7aba" primary="false" name="Ethereal"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="5afa-8691-8230-d288" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="44f9-9bce-9b28-a043" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="44f9-9bce-9b28-a043" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Ethereal" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="eb0c-e2d4-1b25-e480">
@@ -374,7 +374,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
       </profiles>
       <infoLinks>
         <infoLink name="Invulnerable Save (5+)" hidden="false" type="profile" id="3bd3-1b3c-41d6-a73" targetId="27f4-7449-a636-ae8c"/>
-        <infoLink name="For The Greater Good" id="4761-8404-ea96-bb79" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" id="4761-8404-ea96-bb79" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="5f04-86df-441e-8128">
@@ -555,7 +555,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="3d58-2655-391e-ecc" id="aefb-903f-5770-8377" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="7112-1cb3-bebe-80a2" primary="false" name="Markerlight"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6b10-9998-7e32-b888" primary="false" name="Infantry"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="54d8-2501-40a5-b638" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="54d8-2501-40a5-b638" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Darkstrider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="815c-4d84-672e-8f6e">
@@ -601,7 +601,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
             <modifier type="append" value="7&quot;" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="f88f-8ba6-8301-72f5" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="f88f-8ba6-8301-72f5" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="8b8d-d50-4f2a-bf87">
@@ -870,7 +870,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
         <infoLink name="Forming Boarding Squads" id="91f2-5a28-33b5-b824" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
       </infoLinks>
       <entryLinks>
@@ -1050,7 +1050,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
       </costs>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="911a-7f32-c2aa-6b3c" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="911a-7f32-c2aa-6b3c" targetId="eeb6-c42-48f7-cc21"/>
         <infoLink name="Forming Boarding Squads" id="d42c-5de1-a2af-ea0c" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
       </infoLinks>
       <entryLinks>
@@ -1914,12 +1914,12 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="3d58-2655-391e-ecc" id="e439-38ac-fd0-1d24" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink name="Grenades" hidden="false" id="8fee-4d53-4a2e-ccfa" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units:"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="5fbe-f897-5b43-56a1" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="8380-9bbc-e805-cf33" targetId="bec5-4288-34a6-ccfa"/>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="551f-7c42-61fa-4bbc" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="551f-7c42-61fa-4bbc" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6144-5ac3-94ae-e040"/>
@@ -2223,7 +2223,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <infoLink name="Infiltrators" hidden="false" type="rule" id="52dd-233e-5671-6ec" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Lone Operative" hidden="false" type="rule" id="416-7e70-c90-83fe" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="996c-fad2-f61b-ad21" targetId="bec5-4288-34a6-ccfa"/>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="ad77-4d6e-912b-2128" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="ad77-4d6e-912b-2128" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="2330-c0-86bb-d406" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
@@ -2411,7 +2411,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
             <modifier type="append" value="7&quot;" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="d80a-bd90-4bf1-4a0d" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="d80a-bd90-4bf1-4a0d" targetId="eeb6-c42-48f7-cc21"/>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="b4c9-99fe-512c-ffe0" targetId="c05d-f4c3-f091-4938">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -3019,7 +3019,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="5155-eead-ba9f-ede" primary="false" name="Infantry"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1377-b903-4470-40db" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="b0eb-efa7-735c-4174" id="5f4d-2556-8cc7-9a81" primary="false" name="Vespid Stingwings"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="bff4-5f9b-e0f8-d516" primary="true" name="You can include up to one of each of the following units:"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="bff4-5f9b-e0f8-d516" primary="true" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30db-1915-83b0-8dc9"/>
@@ -4232,10 +4232,10 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="6cb2-d56c-5681-963c" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="6cb2-d56c-5681-963c" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8f5d-412f-d058-6c5b"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f5d-412f-d058-6c5b"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="f5c3-045f-7e32-f8ce" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bddc-c7b1-f434-d62d" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="92b5-eb10-24fd-4338" includeChildSelections="true"/>
@@ -4465,10 +4465,10 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="3d7f-a105-8d5-63fb" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="3d7f-a105-8d5-63fb" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c702-650f-c2fa-7292"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c702-650f-c2fa-7292"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="37c0-87ad-e96a-fd73" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="52f0-f224-3509-44fc" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="00df-4ade-8232-857b" includeChildSelections="true"/>
@@ -4723,10 +4723,10 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="For The Greater Good" hidden="false" type="rule" id="1c1-549a-2e50-e590" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="1c1-549a-2e50-e590" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b967-43cf-d7c7-ac3e"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b967-43cf-d7c7-ac3e"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="7952-0267-5353-834e" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e3f0-e6c2-59ab-0914" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fbc5-77d6-1324-4d9b" includeChildSelections="true"/>
@@ -4894,7 +4894,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="fd64-b908-8b61-b130" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="7245-1526-77cc-5de8" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2b-e589-40b4-d88" id="64e5-74ec-2c81-f4e8" primary="false" name="Trail Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="0cc2-80f3-c40a-cc2a" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="0cc2-80f3-c40a-cc2a" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Trail Shaper" hidden="false" id="1cdc-5918-cdf7-96b9" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -5099,7 +5099,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="924-77a8-c451-eaa1" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a9e4-d3bc-1cc6-d355" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="f3d0-13af-62bd-1054" id="5011-5ec-592-c78d" primary="false" name="War Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="1eec-6677-70ac-cb24" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="1eec-6677-70ac-cb24" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot War Shaper" hidden="false" id="edbd-db07-c1af-7726" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -5391,8 +5391,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="af90-e75d-45d0-5f0b" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e303-dd66-1d5c-e25" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2c5e-7638-d746-1d27" id="300a-5784-fadf-9c3f" primary="false" name="Flesh Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="false" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
-        <categoryLink targetId="bddf-cba5-fce4-c27b" id="913c-8916-15d8-5f30" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Flesh Shaper" hidden="false" id="e52-6ec5-f492-4701" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -6919,7 +6918,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
     <entryLink import="true" name="Kroot Hounds" hidden="false" type="selectionEntry" id="9080-347f-a193-a87e" targetId="6883-85aa-b338-b88"/>
     <entryLink import="true" name="Kroot Farstalkers" hidden="false" type="selectionEntry" id="3f15-c0c4-5df4-fed9" targetId="72f2-7d0b-80f9-43b7"/>
     <entryLink import="true" name="Drone Sentry Turret [Legends]" hidden="false" type="selectionEntry" id="4023-8c9b-fc41-ad46" targetId="e73d-cdcf-213d-c7eb"/>
-    <entryLink import="true" name="Show/Hide Options" hidden="false" type="selectionEntry" id="4a3a-941b-fee2-69ca" targetId="e8ef-836a-a9d1-901d"/>
     <entryLink import="true" name="Crisis Sunforge Battlesuits" hidden="false" id="a73a-a9dc-15ab-d9a2" type="selectionEntry" targetId="e88f-bc7a-c3f5-8e47"/>
     <entryLink import="true" name="Crisis Fireknife Battlesuits" hidden="false" id="d959-561c-6561-a9f3" type="selectionEntry" targetId="9373-d0b3-94c9-e47"/>
     <entryLink import="true" name="Crisis Starscythe Battlesuits" hidden="false" id="c3a7-19a8-4735-3eeb" type="selectionEntry" targetId="fb32-c683-b38f-d339"/>
@@ -6988,9 +6986,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true">
-                  <comment>5e2d-92d9-e331-016c
-
-</comment>
+                  <comment>5e2d-92d9-e331-016c</comment>
                 </condition>
               </conditions>
             </modifier>
