@@ -871,6 +871,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </costs>
       <infoLinks>
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Forming Boarding Squads" id="91f2-5a28-33b5-b824" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="410d-e591-feba-dfcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
@@ -1050,6 +1051,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </costs>
       <infoLinks>
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="911a-7f32-c2aa-6b3c" targetId="eeb6-c42-48f7-cc21"/>
+        <infoLink name="Forming Boarding Squads" id="d42c-5de1-a2af-ea0c" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c97d-9778-adf5-45f9" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
@@ -1223,16 +1225,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           <attributes>
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
-        </profile>
-        <profile name="Fieldcraft" hidden="false" id="2d1d-ea81-7078-938b" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the your Command phase, if this unit within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Bodyguard" hidden="false" id="d0e7-bbff-a4f8-1b2d" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this unit has a Starting Strength of 20, you can attach up to two Leader units to it instead of one, provided those Leaders are not duplicates (e.g. you cannot attach two WAR SHAPERS to this unit). If you do, and this unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths.</characteristic>
-          </characteristics>
         </profile>
       </profiles>
       <infoLinks>
@@ -1515,6 +1507,14 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <rules>
+        <rule name="Rules Adaptations" id="a7f5-575a-6952-3414" hidden="false">
+          <description>KROOT CARNIVORES units can perform the Secure Site Tactical Manoeuvre as if they had the BATTLELINE keyword.
+
+
+Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set up a KROOT HOUNDS unit and/or a KROOTOX RIDERS unit in that same Entry Zone.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krootox Riders" hidden="false" id="c523-a2e2-a398-ea00">
       <categoryLinks>
@@ -1539,11 +1539,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
-        <profile name="Kroot Packmates" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a0b-cde0-58da-af93">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, in your opponent&apos;s Shooting phase, when a friendly KROOT INFANTRY unit within 6&quot; of this unit is selected as the target of an attack, one unit from your army with this ability can use it. If it does, after that enemy unit has finished making its attacks, that unit with this ability can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target).</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Scouts" hidden="false" type="rule" id="42b5-8b21-35c1-b220" targetId="ada6-bac1-ffe0-d6f7">
@@ -1564,7 +1559,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Krootox Rider w/ repeater cannon" hidden="false" id="a3cd-29ef-8419-fde6">
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="169-e233-354d-68c5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="169-e233-354d-68c5"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Krootox fists" hidden="false" id="8f2d-16cf-222b-266d" collective="true">
@@ -1643,7 +1638,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Krootox Rider w/ tanglecannon" hidden="false" id="e8d6-71b5-aa6b-335c">
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="29ac-216b-7c77-e422"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ac-216b-7c77-e422"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Krootox fists" hidden="false" id="c01e-d8bf-fe0d-11cc" collective="true">
@@ -1724,7 +1719,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b01-8927-9879-ae2e" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b08f-d59e-2ecf-4d5f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b08f-d59e-2ecf-4d5f" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1921,13 +1916,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
         <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
-      <profiles>
-        <profile name="Forward Observers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5b0-2214-2987-d0de">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit is an Observer unit, until the end of the phase, each time a ranged attack is made by a model in a Guided unit that targets their Spotted unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="5fbe-f897-5b43-56a1" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="8380-9bbc-e805-cf33" targetId="bec5-4288-34a6-ccfa"/>
@@ -2050,22 +2038,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Homing beacon" hidden="false" id="733a-d8f9-87a0-4200">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8a7-6375-1eb8-7b9b"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa7-8938-9a77-3a87"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Homing Beacon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1333-60c8-37d2-1a4d">
-                          <characteristics>
-                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can use the Rapid Ingress Stratagem for 0CP. The target must be set up within 3&quot; of the bearer’s unit and not within 9&quot; of any enemy units.
-**Designer’s Note:** *Place a Homing Beacon token next to this unit, removing it once this ability is used.*</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
                     <entryLink import="true" name="Battlesuit fists" hidden="false" id="329a-10c5-2661-7ba3" type="selectionEntry" targetId="6cf1-5611-ba26-a9b1">
                       <entryLinks>
@@ -3031,7 +3003,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       <profiles>
         <profile name="Vespid Stingwings" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7e86-b9a2-95b2-cf7b">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
@@ -3042,22 +3014,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
-        <profile name="Airborne Agility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="86af-3f86-dca6-faff">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="5155-eead-ba9f-ede" primary="false" name="Infantry"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="5689-5914-ca56-f63" primary="false" name="Fly"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1377-b903-4470-40db" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="b0eb-efa7-735c-4174" id="5f4d-2556-8cc7-9a81" primary="false" name="Vespid Stingwings"/>
         <categoryLink targetId="6f05-f221-113f-3771" id="bff4-5f9b-e0f8-d516" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" type="rule" id="3faa-c494-3f57-38e5" targetId="7cb5-dd6b-dd87-ad3b"/>
-      </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30db-1915-83b0-8dc9"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="a974-d7ab-d42e-6880" includeChildSelections="false"/>
@@ -3371,11 +3334,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <attributes>
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
-        </profile>
-        <profile name="Loping Pounce" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fb24-c625-8e6a-eeb0">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, if this unit is within 6&quot; of one or more friendly KROOT INFANTRY units, then until the end of the turn, this unit is eligible to declare a charge in a turn in which it Advanced.</characteristic>
-          </characteristics>
         </profile>
         <profile name="Hunting Hounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3cfd-4cf6-9b8c-874b">
           <characteristics>
@@ -4007,6 +3965,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Form Boaring Squads" id="2136-737e-f925-52b5" hidden="false">
+          <description>In the Form Boarding Squads step, a KROOT FARSTALKERS unit is split into two Boarding Squads, each containing 6 models.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kroot pistol" hidden="false" id="591e-d6ae-6069-c203" collective="true">
       <profiles>
@@ -4208,7 +4171,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="3d8a-22ba-83ac-7272" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="69b8-f285-d97-96a8" primary="false" name="Walker"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="25ae-e171-41b0-1243" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="ed02-7f6a-d72a-2af8" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="8fab-c07f-bfc6-2fb4" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2d94-6def-9a80-4497" primary="false" name="Faction: T&apos;au Empire"/>
@@ -4236,7 +4198,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <profiles>
             <profile name="Crisis Sunforge Shas’ui" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bf85-bf2c-4b20-5bbc">
               <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -4270,7 +4232,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" type="rule" id="b35d-9dd8-9d52-94d4" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="6cb2-d56c-5681-963c" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
@@ -4300,7 +4261,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               <profiles>
                 <profile name="Crisis Sunforge Shas’vre" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ac8a-d52a-edc4-b45a">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -4428,7 +4389,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="db2b-1da9-29de-e77e" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="5ed-de59-9c68-3d0c" primary="false" name="Walker"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="4606-6b00-8d2d-b5eb" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="c2af-c390-62fe-4b5e" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="5ee5-4535-217e-6423" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="fc8b-b78b-aaa6-ee4a" primary="false" name="Faction: T&apos;au Empire"/>
@@ -4490,7 +4450,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <profiles>
             <profile name="Crisis Fireknife Shas’ui" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7c53-caae-a6de-aac1">
               <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -4505,7 +4465,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" type="rule" id="20eb-4810-f7df-86bd" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="3d7f-a105-8d5-63fb" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
@@ -4577,7 +4536,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               <profiles>
                 <profile name="Crisis Fireknife Shas’vre" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a6db-e4b2-4859-a620">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -4680,7 +4639,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="420f-ef0d-9da1-3bbc" primary="false" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="2fa-cc72-c2f-d9bb" primary="false" name="Walker"/>
-        <categoryLink targetId="c619-2086-bbcf-69c9" id="4c9d-6ed4-f65c-1084" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="7e3f-ad86-7b12-1900" primary="false" name="Battlesuit"/>
         <categoryLink targetId="5409-827f-b23f-5ac" id="e408-ef89-b30b-e447" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="384-b2b8-b4a7-7a1" primary="false" name="Faction: T&apos;au Empire"/>
@@ -4750,7 +4708,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <profiles>
             <profile name="Crisis Starscythe Shas’ui" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6d47-e3be-3c23-7abc">
               <characteristics>
-                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -4765,7 +4723,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" type="rule" id="284a-9c73-c751-f9ef" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="For The Greater Good" hidden="false" type="rule" id="1c1-549a-2e50-e590" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
@@ -4830,7 +4787,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               <profiles>
                 <profile name="Crisis Starscythe Shas’vre" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="49e2-86ee-b35a-8dfd">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">9&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
@@ -5665,6 +5622,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Rules Adaptations" id="edf5-d76c-5dae-4c13" hidden="false">
+          <description>If a KROOT CARNIVORES or KROOT FARSTALKERS unit from your army destroys an enemy unit while receiving the benefits of the KROOT FLESH SHAPER’S Rites of Feasting ability, the Feel No Pain 5+ ability they gain stays in effect, even after they stop receiving the benefit of that ability.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kroot Lone-spear" hidden="true" id="4e8a-c3f4-e497-4901">
       <categoryLinks>
@@ -9468,4 +9430,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <sharedRules>
+    <rule name="Forming Boarding Squads" id="28c4-db13-90eb-f4f4" hidden="false">
+      <description>FIRE WARRIOR units that do not contain a Fire Warrior Shas’ui or Breacher Fire Warrior Shas’ui model after you have formed Boarding Squads lose the MARKERLIGHT keyword.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
