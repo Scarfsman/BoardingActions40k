@@ -8539,7 +8539,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="049c-6192-4134-5243" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5fa5-288f-0879-77b9" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="631c-f570-bc35-4e35" includeChildSelections="true"/>
-        <constraint type="max" value="2" field="selections" scope="49ba-7095-f08c-bc51" shared="true" id="70fc-1511-62ba-1a89"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
