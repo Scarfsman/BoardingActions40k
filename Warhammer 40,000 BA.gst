@@ -5,7 +5,7 @@
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
   </publications>
   <costTypes>
-    <costType id="51b2-306e-1021-d207" name="pts" defaultCostLimit="-1" hidden="false">
+    <costType id="51b2-306e-1021-d207" name="pts" defaultCostLimit="500" hidden="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -498,10 +498,6 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="min" value="500" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4c6c-e7d0-f2d6-79ef-min" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="max" value="500" field="51b2-306e-1021-d207" scope="roster" shared="true" id="4c6c-e7d0-f2d6-79ef-max" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
       <categoryLinks>
