@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3cZ" name="T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="Void Combat Discipline" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>Units from your army with the For the Greater Good ability lose that ability and T’AU EMPIRE units from your army gain this one.
@@ -871,7 +871,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </costs>
       <infoLinks>
         <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
-        <infoLink name="Rules Adaptations" id="9409-d1fd-9098-845e" hidden="false" type="profile" targetId="c809-5a6c-4308-0d67"/>
+        <infoLink name="Form Boarding Squads" id="9409-d1fd-9098-845e" hidden="false" type="profile" targetId="c809-5a6c-4308-0d67"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="410d-e591-feba-dfcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
