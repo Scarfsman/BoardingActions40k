@@ -464,6 +464,8 @@
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="You can include up to three of each of the following units:" id="6ebf-4f84-bed1-f067" hidden="false"/>
+    <categoryEntry name="You can include up to one of each of the following units:" id="6f05-f221-113f-3771" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -472,6 +474,7 @@
         <categoryLink name="You Can Select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
           <comment>You can only</comment>
         </categoryLink>
+        <categoryLink name="You can include up to three of each of the following units:" hidden="false" id="707a-4fe8-8dc2-cabe" targetId="6ebf-4f84-bed1-f067"/>
         <categoryLink id="16fc-8e39-ee82-cf96" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
         <categoryLink id="c932-1176-dc9-b390" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false">
           <constraints>
@@ -501,6 +504,7 @@
         <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="You can include up to one of each of the following units:" hidden="false" id="1801-569c-ba3a-b3f7" targetId="6f05-f221-113f-3771"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
