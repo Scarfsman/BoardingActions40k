@@ -532,6 +532,9 @@
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
       <categoryLinks>
         <categoryLink id="d5de-ee57-ad4b-e4b7" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
+        <categoryLink name="You Can Select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
+          <comment>You can only </comment>
+        </categoryLink>
         <categoryLink id="16fc-8e39-ee82-cf96" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
         <categoryLink id="c932-1176-dc9-b390" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false">
           <constraints>
@@ -559,12 +562,8 @@
         <categoryLink id="2c76-65c5-bad0-8208" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink id="8243-857b-2133-8887" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
         <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
-        <categoryLink id="9198-c35d-71cd-eea3" name="Fortification" hidden="false" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
-        <categoryLink name="You Can Select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
-          <comment>You can only </comment>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">
