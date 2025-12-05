@@ -682,13 +682,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="9179-af04-5445-cfe4" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="75e-c0e8-82ee-b7f5" primary="true" name="Battleline"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="75e-c0e8-82ee-b7f5" primary="false" name="Battleline"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="b06f-10f4-8e31-5b08" primary="false" name="Grenades"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="8ca2-8358-47a0-b53e" primary="false" name="Markerlight"/>
         <categoryLink targetId="327b-5317-ea54-ae90" id="250d-2ac0-62a-6849" primary="false" name="Fire Warrior"/>
         <categoryLink targetId="e3bc-69df-88a0-e5de" id="103c-3d2c-7040-708e" primary="false" name="Strike Team"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2009-58fd-146c-d218" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="3c68-ec30-c1b4-7e62" primary="false" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="3c68-ec30-c1b4-7e62" primary="true" name="You can include up to three of each of the following units"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Fire Warriors" hidden="false" id="acda-c68b-e687-90d6" defaultSelectionEntryId="1c19-f20d-8e7b-db5d" collective="false" sortIndex="3">
@@ -982,13 +982,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="18b5-8bb0-be36-c955" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="1749-f0a3-32fc-ada2" primary="true" name="Battleline"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="1749-f0a3-32fc-ada2" primary="false" name="Battleline"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9005-c66f-9a37-f76e" primary="false" name="Grenades"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="b52-cb3e-4288-f1be" primary="false" name="Markerlight"/>
         <categoryLink targetId="327b-5317-ea54-ae90" id="c858-dc0d-f91e-c104" primary="false" name="Fire Warrior"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="40c5-28c8-ef71-65e3" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="8fa3-ee6b-447e-3cff" id="bd32-f9d4-352a-19e5" primary="false" name="Breacher Team"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="6c72-b3fb-e893-2750" primary="false" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="6c72-b3fb-e893-2750" primary="true" name="You can include up to three of each of the following units"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Breacher Fire Warriors" hidden="false" id="91e6-a9de-d33f-d0ab" sortIndex="3">
@@ -1426,11 +1426,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <modifier type="add" value="6ebf-4f84-bed1-f067" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5691-9564-6d30-64b0" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
