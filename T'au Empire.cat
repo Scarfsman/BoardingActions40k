@@ -1193,7 +1193,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="90e5-eea0-9b26-dac4" primary="false" name="Kroot"/>
         <categoryLink targetId="42fd-5cd2-643a-1bb8" id="e66-2d2a-aab2-caa3" primary="false" name="Carnivores"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="141f-da38-683c-7cc" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="d352-0e5a-7c0e-c14b" primary="true" name="You can include up to one of each of the following units:"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="fbdf-bdcc-e66e-81cf" primary="false" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Carnivores" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e373-8a0-53f2-d26d">
@@ -1430,7 +1430,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5691-9564-6d30-64b0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5691-9564-6d30-64b0" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
