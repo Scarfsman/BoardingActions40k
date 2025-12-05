@@ -13374,8 +13374,6 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
     <categoryEntry name="Commander in Enforcer Battlesuit" hidden="false" id="c043-d7fe-d0b2-6951"/>
     <categoryEntry name="Commander in Coldstar Battlesuit" hidden="false" id="56c8-e8e0-6ef6-f050"/>
     <categoryEntry name="Cadre Fireblade" hidden="false" id="5035-d8d0-822b-e2c"/>
-    <categoryEntry name="Aun&apos;va" hidden="false" id="9cd5-33ae-fb0a-2eb1"/>
-    <categoryEntry name="Aun&apos;shi" hidden="false" id="4ad0-2296-e36d-9032"/>
     <categoryEntry name="Darkstrider" hidden="false" id="7c8a-6776-cffe-f59c"/>
     <categoryEntry name="Markerlight" hidden="false" id="1685-dd28-8e90-e10d"/>
     <categoryEntry name="Longstrike" hidden="false" id="efe-61d1-a00d-d080"/>
@@ -13392,7 +13390,6 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
     <categoryEntry name="Piranha" hidden="false" id="69ad-9250-6e74-46ff"/>
     <categoryEntry name="Vespid Stingwings" hidden="false" id="b0eb-efa7-735c-4174"/>
     <categoryEntry name="Hounds" hidden="false" id="18e9-bb22-6283-f077"/>
-    <categoryEntry name="Broadside" hidden="false" id="cc7e-612b-ac7d-c162"/>
     <categoryEntry name="Riptide" hidden="false" id="5a55-f02e-d30c-85e"/>
     <categoryEntry name="Hammerhead Gunship" hidden="false" id="7b0b-ad0-8397-2937"/>
     <categoryEntry name="Sky Ray Gunship" hidden="false" id="8ecd-70d4-ce52-f480"/>
@@ -13410,9 +13407,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
     <categoryEntry name="Tetras" hidden="false" id="2560-a167-c5a1-d002"/>
     <categoryEntry name="Remora Stealth Drones" hidden="false" id="bd3c-503b-ea7d-105d"/>
     <categoryEntry name="Ta&apos;unar Supremacy Armour" hidden="false" id="a464-ec26-8197-aa96"/>
-    <categoryEntry name="Barracuda" hidden="false" id="8035-bf10-9973-ebac"/>
     <categoryEntry name="Tiger Shark" hidden="false" id="35c6-6866-e393-a011"/>
-    <categoryEntry name="AX-1-0 Tiger Shark" hidden="false" id="b258-865a-15d7-27dd"/>
     <categoryEntry name="Manta" hidden="false" id="ed95-87aa-7704-e8c6"/>
     <categoryEntry name="Orca Dropship" hidden="false" id="1b23-b921-2038-28d3"/>
     <categoryEntry name="Heavy Gun Drones" hidden="false" id="504-c09-bd52-62ae"/>
