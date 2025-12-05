@@ -7862,18 +7862,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec0-28ce-8730-2f56" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="97bc-1349-fb9d-c04f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Star Fire Cadre Enhancements" hidden="false" id="7d37-ad8e-919a-6563" flatten="false" collapsible="false">
           <selectionEntries>
