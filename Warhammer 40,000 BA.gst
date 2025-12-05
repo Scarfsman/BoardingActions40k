@@ -466,15 +466,15 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
-    <categoryEntry name="You can select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="true">
+    <categoryEntry name="You can select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="false">
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="You can include up to three of each of the following units" id="6ebf-4f84-bed1-f067" hidden="true"/>
-    <categoryEntry name="You can include up to one of each of the following units" id="6f05-f221-113f-3771" hidden="true"/>
-    <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" id="bddf-cba5-fce4-c27b" hidden="true"/>
-    <categoryEntry name="You can include up to one of the following units" id="e8c2-b45c-5c10-15cc" hidden="true"/>
+    <categoryEntry name="You can include up to three of each of the following units" id="6ebf-4f84-bed1-f067" hidden="false"/>
+    <categoryEntry name="You can include up to one of each of the following units" id="6f05-f221-113f-3771" hidden="false"/>
+    <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" id="bddf-cba5-fce4-c27b" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units" id="e8c2-b45c-5c10-15cc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
