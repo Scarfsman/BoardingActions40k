@@ -466,6 +466,7 @@
     </categoryEntry>
     <categoryEntry name="You can include up to three of each of the following units" id="6ebf-4f84-bed1-f067" hidden="false"/>
     <categoryEntry name="You can include up to one of each of the following units" id="6f05-f221-113f-3771" hidden="false"/>
+    <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" id="bddf-cba5-fce4-c27b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -505,6 +506,7 @@
         <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
+        <categoryLink name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" hidden="false" id="4c2a-b0f1-01f2-56a8" targetId="bddf-cba5-fce4-c27b"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Boarding Action" hidden="true" id="1d6e-2579-8e7f-1ed4">

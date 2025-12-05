@@ -1193,7 +1193,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="90e5-eea0-9b26-dac4" primary="false" name="Kroot"/>
         <categoryLink targetId="42fd-5cd2-643a-1bb8" id="e66-2d2a-aab2-caa3" primary="false" name="Carnivores"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="141f-da38-683c-7cc" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="fbdf-bdcc-e66e-81cf" primary="false" name="You can include up to one of each of the following units"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="fbdf-bdcc-e66e-81cf" primary="true" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Carnivores" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e373-8a0-53f2-d26d">
@@ -1502,11 +1502,12 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krootox Riders" hidden="false" id="c523-a2e2-a398-ea00">
       <categoryLinks>
-        <categoryLink targetId="14a0-40c9-2748-ae6e" id="1058-9207-5fba-7776" primary="true" name="Mounted"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="1058-9207-5fba-7776" primary="false" name="Mounted"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="5a17-4999-150e-93f9" primary="false" name="Kroot"/>
         <categoryLink targetId="3abc-7184-ffb3-7e03" id="119d-c236-2189-72f7" primary="false" name="Krootox Riders"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1924-9c25-d269-900b" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="81d5-9df1-95e-763" primary="false" name="Grenades"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="b178-2cdb-5d8a-a99f" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Krootox Riders" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8d43-6b77-9b8d-a0a3">
@@ -2969,6 +2970,15 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true">
+              <comment>star fire cadre</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Semi-automatic grenade launcher" hidden="false" id="6af0-a6dd-ddeb-4178" collective="false">
       <profiles>
@@ -3350,10 +3360,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink targetId="4c3e-9310-a516-3590" id="cf89-40f1-534-1719" primary="true" name="Beast"/>
+        <categoryLink targetId="4c3e-9310-a516-3590" id="cf89-40f1-534-1719" primary="false" name="Beast"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="412e-575f-df98-6171" primary="false" name="Kroot"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2cc9-49c6-2062-951" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="18e9-bb22-6283-f077" id="4eff-de59-5847-6dd0" primary="false" name="Hounds"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="fd8e-07dd-b6c4-0e2d" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Scouts" hidden="false" type="rule" id="dd79-1434-64a2-1db7" targetId="ada6-bac1-ffe0-d6f7">
@@ -5830,7 +5841,8 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="af90-e75d-45d0-5f0b" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e303-dd66-1d5c-e25" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2c5e-7638-d746-1d27" id="300a-5784-fadf-9c3f" primary="false" name="Flesh Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="false" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="913c-8916-15d8-5f30" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Flesh Shaper" hidden="false" id="e52-6ec5-f492-4701" typeId="c547-1836-d8a-ff4f" typeName="Unit">
