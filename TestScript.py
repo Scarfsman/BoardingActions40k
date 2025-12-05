@@ -19,6 +19,8 @@ with open(path, 'r') as f:
     my_xml = f.read()
 dorf = xmltojson.parse(my_xml)
 dorf = json.loads(dorf)
+
+
 """
 units = getRules(967)
 parsed = CacheBSData.getFaction("TAU")
