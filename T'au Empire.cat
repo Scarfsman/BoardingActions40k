@@ -7980,11 +7980,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
     <selectionEntry type="model" import="true" name="Kroot Trail Shaper" hidden="false" id="2ebe-a524-656d-7f0e">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="29a3-bcf8-5b5e-d22f" primary="false" name="Infantry"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="3631-33a2-dc81-ab22" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="3631-33a2-dc81-ab22" primary="false" name="Character"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="faaa-1ed6-e817-6eb2" primary="false" name="Kroot"/>
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="fd64-b908-8b61-b130" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="7245-1526-77cc-5de8" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2b-e589-40b4-d88" id="64e5-74ec-2c81-f4e8" primary="false" name="Trail Shaper"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="0cc2-80f3-c40a-cc2a" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Trail Shaper" hidden="false" id="1cdc-5918-cdf7-96b9" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -8174,11 +8175,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
     <selectionEntry type="model" import="true" name="Kroot War Shaper" hidden="false" id="e9bc-7a6e-322c-87fd">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="2acd-6023-b2fc-2dd" primary="false" name="Infantry"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="55be-665d-7840-37e4" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="55be-665d-7840-37e4" primary="false" name="Character"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="671-405b-673d-ae8e" primary="false" name="Kroot"/>
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="924-77a8-c451-eaa1" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a9e4-d3bc-1cc6-d355" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="f3d0-13af-62bd-1054" id="5011-5ec-592-c78d" primary="false" name="War Shaper"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="1eec-6677-70ac-cb24" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot War Shaper" hidden="false" id="edbd-db07-c1af-7726" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -8456,12 +8458,12 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
     <selectionEntry type="model" import="true" name="Kroot Flesh Shaper" hidden="false" id="bb34-e371-33ee-397">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="a1a3-3587-437a-50c" primary="false" name="Infantry"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="9b9d-f94e-6bb0-ded0" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="9b9d-f94e-6bb0-ded0" primary="false" name="Character"/>
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="15b4-7e8a-1a28-6ed4" primary="false" name="Kroot"/>
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="af90-e75d-45d0-5f0b" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e303-dd66-1d5c-e25" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2c5e-7638-d746-1d27" id="300a-5784-fadf-9c3f" primary="false" name="Flesh Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="false" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="true" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Flesh Shaper" hidden="false" id="e52-6ec5-f492-4701" typeId="c547-1836-d8a-ff4f" typeName="Unit">
