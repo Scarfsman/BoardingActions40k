@@ -7985,7 +7985,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="fd64-b908-8b61-b130" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="7245-1526-77cc-5de8" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2b-e589-40b4-d88" id="64e5-74ec-2c81-f4e8" primary="false" name="Trail Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="cab4-1df6-1d00-5e97" primary="false" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Trail Shaper" hidden="false" id="1cdc-5918-cdf7-96b9" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -8047,7 +8046,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="78ee-7082-6eb4-1f0c" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="65f8-1a02-ea82-f027" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1e4c-ea0e-613e-ea50" includeChildSelections="true"/>
-        <constraint type="max" value="2" field="selections" scope="49ba-7095-f08c-bc51" shared="true" id="0836-1cd2-7b20-bd0b"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -8181,7 +8179,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="924-77a8-c451-eaa1" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a9e4-d3bc-1cc6-d355" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="f3d0-13af-62bd-1054" id="5011-5ec-592-c78d" primary="false" name="War Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="9eca-e140-22fb-e249" primary="false" name="You Can Select up to two of the below Units (Duplicates are not allowed)"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot War Shaper" hidden="false" id="edbd-db07-c1af-7726" typeId="c547-1836-d8a-ff4f" typeName="Unit">
