@@ -995,7 +995,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="327b-5317-ea54-ae90" id="c858-dc0d-f91e-c104" primary="false" name="Fire Warrior"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="40c5-28c8-ef71-65e3" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="8fa3-ee6b-447e-3cff" id="bd32-f9d4-352a-19e5" primary="false" name="Breacher Team"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="6c72-b3fb-e893-2750" primary="true" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="42b5-805b-da80-1d35" primary="true" name="You can include up to three of each of the following units"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Breacher Fire Warriors" hidden="false" id="91e6-a9de-d33f-d0ab" sortIndex="3">
