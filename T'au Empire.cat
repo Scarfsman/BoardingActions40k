@@ -1201,6 +1201,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden" affects="6ebf-4f84-bed1-f067"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kroot Carnivores" hidden="false" id="d631-3ca5-e206-4e6a">
