@@ -871,7 +871,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
       </costs>
       <infoLinks>
         <infoLink name="Void Combat Discipline" hidden="false" type="rule" id="4f5c-a782-73b1-531c" targetId="eeb6-c42-48f7-cc21"/>
-        <infoLink name="Forming Boarding Squads" id="91f2-5a28-33b5-b824" hidden="false" type="rule" targetId="28c4-db13-90eb-f4f4"/>
+        <infoLink name="Rules Adaptations" id="9409-d1fd-9098-845e" hidden="false" type="profile" targetId="c809-5a6c-4308-0d67"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="410d-e591-feba-dfcf" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
@@ -1226,6 +1226,16 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
+        <profile name="Rule Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9f99-9976-7810-c7ad">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">KROOT CARNIVORES units can perform the Secure Site Tactical Manoeuvre as if they had the BATTLELINE keyword.
+
+
+
+
+Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set up a KROOT HOUNDS unit and/or a KROOTOX RIDERS unit in that same Entry Zone.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Scouts" hidden="false" type="rule" id="e845-37b-75c2-2e95" targetId="ada6-bac1-ffe0-d6f7">
@@ -1507,14 +1517,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
-      <rules>
-        <rule name="Rules Adaptations" id="a7f5-575a-6952-3414" hidden="false">
-          <description>KROOT CARNIVORES units can perform the Secure Site Tactical Manoeuvre as if they had the BATTLELINE keyword.
-
-
-Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set up a KROOT HOUNDS unit and/or a KROOTOX RIDERS unit in that same Entry Zone.</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krootox Riders" hidden="false" id="c523-a2e2-a398-ea00">
       <categoryLinks>
@@ -9396,6 +9398,11 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Rules Adaptations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c809-5a6c-4308-0d67">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">FIRE WARRIOR units that do not contain a Fire Warrior Shas’ui or Breacher Fire Warrior Shas’ui model after you have formed Boarding Squads lose the MARKERLIGHT keyword.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Unaligned Forces" id="31ce-9bc2-d362-37c4" targetId="581a-46b9-5b86-44b7" importRootEntries="true"/>
@@ -9456,9 +9463,4 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <sharedRules>
-    <rule name="Forming Boarding Squads" id="28c4-db13-90eb-f4f4" hidden="false">
-      <description>FIRE WARRIOR units that do not contain a Fire Warrior Shas’ui or Breacher Fire Warrior Shas’ui model after you have formed Boarding Squads lose the MARKERLIGHT keyword.</description>
-    </rule>
-  </sharedRules>
 </catalogue>
