@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
-    <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
-      <description>If your Army Faction is **^^T’au Empire^^**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.
+    <rule name="Void Combat Discipline" hidden="false" id="eeb6-c42-48f7-cc21">
+      <description>Units from your army with the For the Greater Good ability lose that ability and T’AU EMPIRE units from your army gain this one.
 
-During your Shooting phase, for each Observer unit from your army that has not been selected to shoot this phase and is eligible to shoot (excluding **^^Fortification^^** and Battle‑shocked units) select one enemy unit that is visible to be marked as their Spotted unit until the end of the phase. Each enemy unit can only be marked as a Spotted unit once per phase.
 
-Units from your army with the For the Greater Good ability (excluding Observer units) are Guided units while targeting one or more Spotted units.
-
-Until the end of the phase, each time a model from your army in a Guided unit makes an attack that targets a Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and, if the Spotted unit was marked by an Observer unit that has the Markerlight keyword, that attack has the **[IGNORES COVER]** ability.</description>
+Each time a model in this unit makes a ranged attack, it can ignore other model in this unit for the purpose of determining visibility. In addition, this unit is eligible to perform the Set Overwatch Tactical Manoeuvre in a turn in which it Advanced or Fell Back. </description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -864,7 +861,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="322b-fe61-59fb-141c"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="322b-fe61-59fb-141c"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="e3e2-c67f-1b6f-4c79" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a41a-70f9-7369-2f50" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="897c-cd7f-a36e-f39e" includeChildSelections="true"/>
@@ -1043,7 +1040,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="322b-fe61-59fb-141c"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="322b-fe61-59fb-141c"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="80b0-6b38-6b71-fdd9" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8a9b-0ac2-d392-79ff" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8862-4642-a59e-9c52" includeChildSelections="true"/>
@@ -1245,6 +1242,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" hidden="false" type="rule" id="6b6f-90d4-8899-2848" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="f1bb-7b59-dd3e-25d6" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1eab-7969-2e3e-4f2d"/>
@@ -1553,6 +1551,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             <modifier type="append" value="7&quot;" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Void Combat Discipline" id="1799-0768-8de9-281a" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="50d7-8a49-d850-e856"/>
@@ -1913,14 +1912,14 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stealth Battlesuits" hidden="false" id="5d3a-803e-7cbc-b2f1">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a8b0-b17d-ee1-59b6" primary="true" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a8b0-b17d-ee1-59b6" primary="false" name="Infantry"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="bedf-7bc1-30ee-e5db" primary="false" name="Fly"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="570-f85b-1daf-c925" primary="false" name="Battlesuit"/>
         <categoryLink targetId="76ec-55b5-1805-5855" id="58ff-5c4b-2872-699c" primary="false" name="Stealth"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e439-38ac-fd0-1d24" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink name="Grenades" hidden="false" id="8fee-4d53-4a2e-ccfa" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="false" name="You can include up to one of each of the following units:"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Forward Observers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5b0-2214-2987-d0de">
@@ -3398,6 +3397,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" hidden="false" type="rule" id="29f6-40e2-cf9c-b153" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="44f2-5ffe-06b9-70e9" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Kroot Hounds (5-10)" id="28b9-c686-23b0-a9ae" hidden="false" sortIndex="2">
@@ -3567,6 +3567,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="a535-3aee-e88c-dcda" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="Stealth" hidden="false" type="rule" id="fe3c-d815-d4aa-47b1" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="0b38-b2a4-d887-efd2" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Bounty Hunters" hidden="false" id="8c3a-5cb2-6a94-891b">
@@ -4971,6 +4972,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" hidden="false" id="977f-a72e-889b-6e98" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="ee62-f488-b3ce-3859" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="7233-b51f-7356-29fc">
@@ -5175,6 +5177,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" hidden="false" id="3a8a-17d-391c-75a6" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="2fc7-6fdd-dc10-0041" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="e826-6836-c84-522">
@@ -5457,6 +5460,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" hidden="false" id="7795-3b95-f10a-9197" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Void Combat Discipline" id="e7a4-c1a6-3ce0-81a1" hidden="false" type="rule" targetId="eeb6-c42-48f7-cc21"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="15b8-96eb-8145-80ab">
@@ -7334,21 +7338,15 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Kroot Boarding Party" id="5e2d-92d9-e331-016c">
           <rules>
-            <rule name="Bonded Heroes" id="400b-c724-6710-76b1" hidden="false">
-              <description>Each time a T&apos;AU EMPIRE BATTLESUIT model from your army makes a ranged attack that targets a unit within 12&quot;, improve the Strength characteristic of that attack by 1. If that attack targets a unit within 9&quot;, improve the Armour Penetration characteristic of that attack by 1 as well.</description>
+            <rule name="Guerrilla Ambushers" id="400b-c724-6710-76b1" hidden="false">
+              <description>Each time an enemy unit is selected to fire Overwatch, roll one D6: on a 4+, until the end of the turn, that unit cannot make Overwatch attacks that target KROOT units from your army.</description>
             </rule>
           </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Star Fire Cadre" hidden="false" id="3178-bc88-dffe-525e">
           <rules>
-            <rule name="Integrated Command Structure" id="eb32-1926-a607-c01c" hidden="false">
-              <description>KROOT and VESPID STINGWINGS units from your army have the following ability:
-
-Targeting Triangulation (Aura): While an enemy unit is within 9&quot; of and visible to this unit, each time a ranged attack made by a friendly T’AU EMPIRE model (excluding KROOT, VESPID STINGWINGS and TITANIC models) targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1.
-
-T’AU EMPIRE units (excluding KROOT and VESPID STINGWINGS units) from your army have the following ability:
-
-Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS unit is wholly within 6&quot; of and visible to this unit, that KROOT or VESPID STINGWINGS unit can only be selected as the target of a ranged attack if the attacking model is within 18&quot;.</description>
+            <rule name="Markerlight Precision" id="eb32-1926-a607-c01c" hidden="false">
+              <description>Each time a T’AU EMPIRE unit from your army (excluding KROOT units) is selected to shoot, ranged weapons equipped by models in your unit have their Ballistic Skill characteristic improved by 1 and have the [SUSTAINED HITS 1] ability while targeting an enemy unit that is visible to one or more friendly MARKERLIGHT units that are not within Engagement Range of one or more enemy models.</description>
             </rule>
           </rules>
         </selectionEntry>
