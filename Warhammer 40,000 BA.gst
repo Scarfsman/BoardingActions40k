@@ -528,7 +528,7 @@
     <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
     <categoryEntry name="You Can Select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="false">
       <constraints>
-        <constraint type="min" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
