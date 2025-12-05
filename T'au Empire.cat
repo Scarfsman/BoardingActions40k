@@ -7290,6 +7290,9 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c76-db9f-f6c4-889a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -9177,11 +9180,6 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
               </conditionGroups>
             </modifier>
           </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Missile Drone" hidden="false" id="a658-7737-2031-8e07" type="selectionEntry" targetId="427f-9ad8-09e6-5466">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6314-b733-dc0e-1565"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <constraints>
