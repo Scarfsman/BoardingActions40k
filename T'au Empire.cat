@@ -1447,6 +1447,11 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="5691-9564-6d30-64b0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="9792-5b2a-34e0-852c" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
