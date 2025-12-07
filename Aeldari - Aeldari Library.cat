@@ -16709,7 +16709,7 @@ It can also move through sections of terrain features that are more than 4&quot;
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17429,7 +17429,7 @@ It can also move through sections of terrain features that are more than 4&quot;
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17805,7 +17805,7 @@ It can also move through sections of terrain features that are more than 4&quot;
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19589,7 +19589,7 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19705,7 +19705,7 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -38033,7 +38033,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
