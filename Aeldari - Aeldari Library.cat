@@ -19587,13 +19587,6 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="ae1b-1a96-5b4c-cecc" name="Lelith Hesperax" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
