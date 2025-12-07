@@ -8,7 +8,15 @@
     <entryLink import="true" name="Beastmaster [Legends]" hidden="false" type="selectionEntry" id="e44f-a5c6-e78-cce4" targetId="f99a-af49-64c0-9bed"/>
     <entryLink import="true" name="Court of the Archon" hidden="true" type="selectionEntry" id="1cfc-355a-ccc1-176b" targetId="b221-43a3-8bee-117c"/>
     <entryLink import="true" name="Drazhar" hidden="false" type="selectionEntry" id="80eb-f424-6a35-c0c9" targetId="a30b-b966-d264-e935"/>
-    <entryLink import="true" name="Incubi" hidden="false" type="selectionEntry" id="a658-2f16-a5ad-f228" targetId="1529-793d-481b-82bf"/>
+    <entryLink import="true" name="Incubi" hidden="false" type="selectionEntry" id="a658-2f16-a5ad-f228" targetId="1529-793d-481b-82bf">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Kabalite Warriors" hidden="false" type="selectionEntry" id="c45d-8c86-3405-8215" targetId="d20b-783-ccf6-b29d"/>
     <entryLink import="true" name="Lelith Hesperax" hidden="true" type="selectionEntry" id="fb3e-8f1b-63d7-f761" targetId="ae1b-1a96-5b4c-cecc"/>
     <entryLink import="true" name="Mandrakes" hidden="false" type="selectionEntry" id="a128-870b-3f8b-59e0" targetId="6a3a-7973-b509-532e"/>
