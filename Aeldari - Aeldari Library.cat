@@ -16635,7 +16635,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <entryLink import="true" name="Enhancements" hidden="false" id="8796-ece9-3f62-814f" type="selectionEntryGroup" targetId="4e2c-4ba5-749f-745a" sortIndex="3"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b38e-81e-cce2-16c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b38e-81e-cce2-16c" includeChildSelections="true"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="a196-e719-6d97-bbe6" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fd36-d707-2924-b364" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fb5a-cb9d-9309-4a25" includeChildSelections="true"/>
@@ -16707,7 +16707,11 @@ It can also move through sections of terrain features that are more than 4&quot;
         </modifierGroup>
       </modifierGroups>
       <modifiers>
-        <modifier type="set" value="1" field="b38e-81e-cce2-16c"/>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="f99a-af49-64c0-9bed" name="Beastmaster [Legends]" page="9" hidden="false" collective="false" import="true" type="unit">
@@ -17077,7 +17081,8 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink id="30d8-43b0-aad-866b" name="Aeldari" hidden="false" targetId="e035-51fc-813a-1313" primary="false"/>
         <categoryLink id="402b-3ded-de84-f13c" name="Kabal" hidden="false" targetId="fa4-eae-8e9e-1921" primary="false"/>
         <categoryLink id="4a2e-50a7-c155-5ed0" name="Faction: Drukhari" hidden="false" targetId="1015-db48-a2fa-c7da" primary="false"/>
-        <categoryLink id="6e62-e017-fe09-a705" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink id="6e62-e017-fe09-a705" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="0bac-a89f-d34e-fba0" primary="true" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -17346,7 +17351,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <infoLink name="Power from Pain" hidden="false" type="rule" id="b9c3-3139-68-e45" targetId="5e02-2ddc-f55-e6dd"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e789-b8cd-6de6-b1da" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e789-b8cd-6de6-b1da" includeChildSelections="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="a0bb-91a5-de8a-202a" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="fc92-66b1-8d3d-95d7" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9da1-5bf4-c275-913b" includeChildSelections="true"/>
@@ -17797,6 +17802,13 @@ It can also move through sections of terrain features that are more than 4&quot;
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d729-7e1f-93a9-b1c5" name="Grotesques [Legends]" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -18733,6 +18745,11 @@ It can also move through sections of terrain features that are more than 4&quot;
             <condition field="selections" scope="1529-793d-481b-82bf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c3aa-1e6c-e02c-c192" name="Incubi" hidden="false" targetId="1878-4fff-e0c3-da26" primary="false"/>
@@ -18898,7 +18915,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <infoLink name="Power from Pain" hidden="false" type="rule" id="5887-7d8e-c023-f4fe" targetId="5e02-2ddc-f55-e6dd"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ce67-e35b-8b43-f729" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce67-e35b-8b43-f729" includeChildSelections="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="0475-4f1b-0e72-723e" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5465-9123-bf79-6e94" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="222f-9daa-28e7-b3bc" includeChildSelections="true"/>
@@ -19009,8 +19026,9 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
         <categoryLink id="ae81-3385-e023-9cb5" name="Aeldari" hidden="false" targetId="e035-51fc-813a-1313" primary="false"/>
         <categoryLink id="d8bc-f2ac-9b2a-b76e" name="Kabal" hidden="false" targetId="fa4-eae-8e9e-1921" primary="false"/>
         <categoryLink id="b09a-4ac1-8f68-5aad" name="Faction: Drukhari" hidden="false" targetId="1015-db48-a2fa-c7da" primary="false"/>
-        <categoryLink id="8173-42f2-10fe-2011" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink id="8173-42f2-10fe-2011" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
         <categoryLink id="d795-4a80-39c7-8ad0" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="560f-f3d5-fc87-71b8" primary="true" name="You can include up to three of each of the following units"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
@@ -19488,17 +19506,12 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under you control, until your opponent&apos;s Level of Control over that objective marker is greater than yours at the end of a phase.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sadistic Raiders (Pain)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7438-166c-2a79-f18d">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase or the Fight phase, when you select this unit to shoot or fight, you can spend 1 Pain token to Empower this unit. While Empowered, each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target is within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Power from Pain" hidden="false" type="rule" id="8893-bd16-b2a8-f000" targetId="5e02-2ddc-f55-e6dd"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="cfa9-883b-67f1-e041" includeChildSelections="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="cfa9-883b-67f1-e041" includeChildSelections="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="5f0a-5ee8-bc23-5827" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="63ed-f27c-27e1-5150" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="35f4-3a44-b3bd-be1a" includeChildSelections="true"/>
@@ -19573,6 +19586,13 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ae1b-1a96-5b4c-cecc" name="Lelith Hesperax" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -19683,13 +19703,19 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
             <condition field="selections" scope="6a3a-7973-b509-532e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9805-eaee-0a84-f86f" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4fdc-1dd0-51e3-b3e9" name="Mandrakes" hidden="false" targetId="6775-2224-b30e-47e9" primary="false"/>
         <categoryLink id="795b-153f-2219-8f7a" name="Aeldari" hidden="false" targetId="e035-51fc-813a-1313" primary="false"/>
         <categoryLink id="83b-809f-596e-8123" name="Faction: Drukhari" hidden="false" targetId="1015-db48-a2fa-c7da" primary="false"/>
-        <categoryLink id="b886-e314-7868-75f5" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink id="b886-e314-7868-75f5" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink targetId="de72-7478-144e-d12b" id="1d87-99fa-7c8b-3e32" primary="false" name="Blades for Hire"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="993f-1fa6-4e34-c31c" primary="true" name="You can include up to one of each of the following units"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
@@ -19861,7 +19887,7 @@ For every 5 models in this unit, it can have 1 Incubi Shrine token.</characteris
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3550-c949-9288-d31a" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3550-c949-9288-d31a" includeChildSelections="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3536-0310-4bba-900e" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9dd5-94d1-18dd-c6f2" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="68ee-695f-6f76-dc23" includeChildSelections="true"/>
@@ -37998,10 +38024,10 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
     </selectionEntryGroup>
     <selectionEntryGroup name="Detachments" hidden="false" id="7466-16bc-8db6-814" defaultSelectionEntryId="none">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Protector Host" hidden="false" id="9805-eaee-0a84-f86f">
+        <selectionEntry type="upgrade" import="true" name="Kabalite Corsairs" hidden="false" id="9805-eaee-0a84-f86f">
           <rules>
-            <rule name="Determined Defence" id="7634-617a-fc22-593b" hidden="false">
-              <description>Each time an attack targets a GUARDIANS or DIRE AVENGERS unit from your army, if that unit is within range of an objective marker, add 1 to any armour saving throw made against that attack.</description>
+            <rule name="Raid and Pillage" id="7634-617a-fc22-593b" hidden="false">
+              <description>Each time a DRUKHARI unit from your army destroys an enemy unit, if that enemy unit was within range of an objective marker controlled by your opponent at the start of the phase, you gain 1 Pain token. In addition, in your Command phase, you can select one objective marker you control that has one or more KABAL units from your army within range of it, then expend 1 Pain token from your Pain token pool. If you do, that objective marker is Secured by your army.</description>
             </rule>
           </rules>
           <modifiers>
@@ -38025,6 +38051,20 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
               <description>Each time a DRUKHARI CHARACTER model from your army destroys an enemy CHARACTER unit, you gain 1 Pain token. In addition, each time you use the Battlefield Command Stratagem, you can expend 1 Pain token from your Pain token pool. If you do, decrease that Stratagems cost by 1CP for that usage.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Protector Host" hidden="false" id="3d5f-45da-977e-4579">
+          <rules>
+            <rule name="Determined Defence" id="747b-af96-a113-a059" hidden="false">
+              <description>Each time an attack targets a GUARDIANS or DIRE AVENGERS unit from your army, if that unit is within range of an objective marker, add 1 to any armour saving throw made against that attack.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -39338,7 +39378,6 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="lessThan" value="1" field="selections" scope="roster" childId="a27b-ac32-f0fd-8111" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
@@ -39347,814 +39386,11 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
               </conditionGroups>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Guiding Presence" hidden="false" id="6716-5adc-b3c9-2acb">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Guiding Presence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="11e5-0999-5307-3f38">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Aeldari Psyker model only. At the start of your Shooting phase, select one friendly Aeldari Vehicle model within 9&quot; of the bearer. Until the end of the phase, each time that model makes an attack, add 1 to the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d59-f02a-f6f1-62e5" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Harmonisation Matrix" hidden="false" id="e1e3-f2e0-5375-a2e9">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Harmonisation Matrix" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="30b2-9f10-4765-268b">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Aeldari model only. In your Command phase, if the bearer (or any Transport it is embarked within) is within range of an objective marker you control, roll one D6: on a 3+, you gain 1CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="477c-2106-cc47-aeda" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Spirit Stone of Raelyth" hidden="false" id="4196-9426-5925-ce63">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Spirit Stone of Raelyth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="87cb-95ef-dc8b-8763">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Aeldari Psyker model only. While the bearer is within 3&quot; of one or more friendly Aeldari Vehicle units, the bearer has the Lone Operative ability. In your Command phase, you can select one friendly Aeldari Vehicle model within 3&quot; of the bearer. That model regains up to D3 lost wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true" includeChildSelections="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="13bf-2bee-3ae0-b414" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c71f-1029-d878-8298" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Guileful Strategist" hidden="false" id="276e-3d3c-4367-cd86">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Guileful Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="92c9-0840-d29d-dd60">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Aeldari model only. If your army includes the bearer, after both players have deployed their armies, select up to three Aeldari Vehicle units from your army and redeploy them. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aaed-4fb1-1835-59df" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e035-51fc-813a-1313" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="188a-0fa4-58a4-9555"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Aspect Host Enhancements" id="e105-2285-4d63-819b" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="8e89-2c14-6bf5-87bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f760-55d8-25ac-9576" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Aspect of Murder" hidden="false" id="c8de-3531-4ac1-a88b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e51d-2c7e-bcaf-29e8" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Aspect of Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0d1f-6c43-cca7-6d34">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Autarch^^** or **^^Autarch Wayleaper^^** model only. Add 1 to the Damage characteristics of melee weapons equipped by the bearer, and those weapons have the **[PRECISION]** ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bb66-4f35-677f-d148" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8b27-6a89-af6e-4a54" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Aspect of Murder" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="append" value="Precision" field="893f-9000-ccf7-648e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
-                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <infoLinks>
-                <infoLink name="Precision" id="8c5b-2ffa-9d42-5e12" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mantle of Wisdom" hidden="false" id="0a0b-4e89-3576-1d96">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7a58-b0cc-096c-9996" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Mantle of Wisdom" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="360b-a14c-f478-fdb4">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Autarch^^** or ^^**Autarch Wayleaper^^** model only. While the bearer is leading an ^^**Aspect Warriors^^** unit, each time that unit is selected to shoot or fight, until the end of the phase, models in that unit gain both of the abilities from the Path of the Warrior Detachment rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bb66-4f35-677f-d148" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8b27-6a89-af6e-4a54" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shimmerstone" hidden="false" id="aad8-7608-0af0-628c">
-              <profiles>
-                <profile name="Shimmerstone" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="49b9-2115-9a48-ac5e">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1a86-4228-f56a-666e" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bb66-4f35-677f-d148" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8b27-6a89-af6e-4a54" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Strategic Savant" hidden="false" id="f980-e125-e534-dd4e">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0554-07e8-f969-3a75" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Strategic Savant" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4ad-19dc-e479-dd27">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="bb66-4f35-677f-d148" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="8b27-6a89-af6e-4a54" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Devoted of Ynnead Enhancements" id="609f-4da3-ab1b-3bbc" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gaze of Ynnead" hidden="false" id="15a4-4dee-37f6-8d4b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="40eb-496b-0ccc-029d" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Gaze of Ynnead" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f57-0ced-63ca-76d0">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Farseer model only. The bearer&apos;s Eldritch Storm weapon has the [Devastating Wounds] ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="851f-4e16-2f8d-17ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Storm of Whispers" hidden="false" id="a5e4-493b-ef71-c833">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="017d-d04e-d8cd-e709" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Storm of Whispers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c855-7299-68da-fc7a">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Warlock model only. In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="a67a-77cf-f6e3-390a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Borrowed Vigour" hidden="false" id="7321-9d12-a2fa-d1e6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0c85-7b4e-9ec7-edbc" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Borrowed Vigour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b32a-7c31-93f5-e663">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Archon^^** model only. Add 2 to the Attacks characteristic of the bearer&apos;s melee weapons.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="6c05-f06f-9b9f-890d" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Borrowed Vigour" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
-                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
-                    <modifier type="increment" value="2" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="decrement" value="2" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
-                    <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Morbid Might" hidden="false" id="6617-8f5a-b98a-e897">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bb61-64d8-eacc-9e34" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Morbid Might" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e78a-fe96-2aa9-35b1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Succubus model only. Each time the bearer makes a melee attack, you can re-roll the Wound roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2902-dd28-7b9f-094c" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="925e-85fb-b477-70be" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Ghosts of the Webway Enhancements" id="0dce-ecda-f441-a5de" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cegorach&apos;s Coil" hidden="false" id="ad20-1ee6-b7ce-0c17">
-              <profiles>
-                <profile name="Cegorach&apos;s Coil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60ee-0248-2470-a603">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Troupe Master model only. Each time the bearer&apos;s unit ends a Charge move, select one enemy unit within Engagement Range of the bearer&apos;s unit, then roll one D6 for each model in the bearer&apos;s unit that is within Engagment Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4b57-8594-d9d7-d049" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3fb5-c715-4d17-a9fa" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mask of Secrets" hidden="false" id="a067-906b-f29b-253a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ccaf-b254-5aff-8dcb" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Mask of Secrets" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="212c-47ff-7093-5d0d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Harlequins model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer&apos;s unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Murder&apos;s Jest" hidden="false" id="f479-1838-39ed-3c9d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d8d-ac80-6bf1-9e73" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Murder&apos;s Jest" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9d16-b590-9d37-e361">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Death Jester model only. Each time the bearer makes an attack that targets a unit that is below Half-strength, each successful Hit scores a Critical Hit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c593-9ffa-a9c4-377c" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mistweave" hidden="false" id="5d21-7924-d79b-3be1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b093-14c2-87bf-d510" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Mistweave" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0c74-5dca-786b-6e00">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Shadowseer model only. While the bearer is leading a unit, models in that unit have the Infiltrators ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="d2c0-da0-5989-959c" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66d1-823f-68bb-1a67" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="be59-ec7d-2f02-b6ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Guardian Battlehost Enhancements" id="9ca9-da7c-c451-0516" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Craftworld&apos;s Champion" hidden="false" id="4d59-81d8-0a78-adf3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="584f-d176-619a-0ce9" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Craftworld&apos;s Champion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dd2-f8d5-165e-45be">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. The bearer has an Objective Control characteristic of 5.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ethereal Pathway" hidden="false" id="7b5e-5f21-cb77-1208">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4214-ada0-6cb3-37df" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Ethereal Pathway" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fba1-2e9c-c1a2-86cc">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. In the Deploy Armies step, select up to two Guardians units from your army. Models in the selected units have the Infiltrators ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Protector of the Paths" hidden="false" id="7c21-5892-1827-1ff9">
-              <profiles>
-                <profile name="Protector of the Paths" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="957b-c7cc-39c8-ba8c">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. While the bearer is leading a Dire Avengers or Guardians unit, once per battle round, you can target the bearer&apos;s unit with the Fire Overwatch Stratagem for 0CP, and while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if the bearer&apos;s unit is within range of an objective marker you control.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7fbe-c362-63ee-66ec" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Breath of Vaul" hidden="false" id="b142-6aad-160a-75d0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a4dd-d1bf-9ba6-64a2" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Breath of Vaul" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4f30-3cd4-4fe8-cf84">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Asuryani^^** model only. While the bearer is leading a **^^Storm Guardians^^** unit, each time you roll to determine the number of attacks made with a flamer equipped by a model in that unit, you can re-roll the result, and each time you make a Damage roll for a model equipped with a Guardian fusion gun in that unit, you can re-roll the result.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d1-b437-4b9b-c095" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Realspace Raiders Enhancements" id="33a3-43a6-44d6-b5bf" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Crucible of Malediction" hidden="false" id="651b-340c-8698-732d" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a75-6118-3a44-651e"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="79fb-2ea3-b156-b0db" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Crucible of Malediction" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3634-9104-e3bf-38fa">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Haemonculus^^** model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12&quot; of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a **^^Psyker^^** unit fails that test, it suffers 3 mortal wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Eye of Spite" hidden="false" id="5158-7f1e-824c-3627" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc7-e771-f5ec-7061"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="52a1-e946-49dc-7702" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Eye of Spite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36e-245-5b61-c7a9">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Succubus^^** model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer&apos;s unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Eye of Spite" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                    <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
-                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
-                    <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
-                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
-                    <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Labyrinthine Cunning" hidden="false" id="3779-7a56-8add-3c27" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc8a-d23f-7b52-1983"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="33e8-faae-cb6a-bc40" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Labyrinthine Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e73-c351-7d24-482f">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Archon^^** model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:
-Spend 1 Pain token and gain 1CP.
-Roll one D6: on a 4+, you gain 1CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dark Vitality" hidden="false" id="715-eb25-e05a-dda9" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ecd-64c3-a8de-e9f4"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7a81-c715-3c17-8a97" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Dark Vitality" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b660-b1c1-e41a-828f">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Drukhari^^** model only. The bearer&apos;s unit is always Empowered - you do not need to spend any Pain tokens to activate that unit&apos;s Pain abilities</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup name="Kabalite Corasirs Enhancements" id="1e96-f965-304b-f853" hidden="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -40166,33 +39402,7 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ae-d65a-2b95-b1d0"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Reaper&apos;s Wager Enhancements" id="90b8-32e1-d346-a0ec" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -40201,945 +39411,11 @@ Roll one D6: on a 4+, you gain 1CP.</characteristic>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Archraider" hidden="false" id="8a73-4f00-0bb8-9298">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3bf-3513-9836-2a6d" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f6ac-3d22-6cbc-5a5f" includeChildSelections="true" includeChildForces="true"/>
-              </constraints>
+            <selectionEntry type="upgrade" import="true" name="Malevolent Cunning" hidden="false" id="7166-b2d0-75ef-5fe7">
               <profiles>
-                <profile name="Archraider" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f957-df14-5640-41be">
+                <profile name="Malevolent Cunning" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4d7b-ba0b-2cb4-5325">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Harlequins**^^ or ^^**Drukhari**^^ model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport**^^, that ^^**Dedicated Transport**^^ has the Scouts 9&quot; ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Webway walker" hidden="false" id="acb4-8fc5-8c22-82f2">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebcb-bbad-8e37-23c9" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a5ff-01e9-95ad-185f" includeChildSelections="true" includeChildForces="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Webway walker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ed9c-b9c1-c2e7-fa97">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Harlequins**^^ or ^^**Drukhari**^^ model only. Models in the bearer’s unit have the Deep Strike ability. Each time the bearer’s unit is set up on the battlefield using the Deep Strike ability, if that unit is currently losing the wager, until the end of the turn, you can re‑roll Charge rolls made for that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Reaper&apos;s Cowl" hidden="false" id="4483-1caf-6caa-d571">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a489-53d8-564a-2caf" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b078-8643-a1d5-a11a" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Reaper&apos;s Cowl" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a6cb-7d6e-eb8c-79d5">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Harlequins**^^ model only. Models in the bearer’s unit have the Stealth and Infiltrators abilities.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a5a2-d0c0-0349-d226" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Conductor of Torment" hidden="false" id="25d9-822d-ff7f-53b5">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9401-f630-8f20-337a" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8ba7-d603-ce9a-c361" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Conductor of Torment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e28b-8f8e-887d-f9ab">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Drukhari**^^ model only. In your Command phase, you can do one of the following:
-■ If your ^^**Drukhari**^^ units are currently losing the wager, you can gain 1 Pain token. If you do, ^^**Drukhari**^^ units from your army are now winning the wager.
-■ If your ^^**Drukhari**^^ units are currently winning the wager, you can discard 1 Pain token. If you do, ^^**Harlequins**^^ units from your army are now winning the wager.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db16-d9bd-bdd0-9ff5"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Seer Council Enhancements" id="9197-1498-317e-3df6" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="b525-57b6-8a78-ed75" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adac-c57d-b241-8a23" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Lucid Eye" hidden="false" id="6526-d88c-b082-688b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cabf-d166-de2e-aa73" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Lucid Eye" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f9b-a057-96a0-d061">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Psyker model only. In your Command phase, you can add 1 to or subtract 1 from the value of one Fate dice in your Fate dice pool.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Runes of Warding" hidden="false" id="b4a8-8ce4-a1f3-b8ce">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Runes of Warding" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8307-fd06-3bdf-7621">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Psyker model only. Models in the bearer&apos;s unit have the Feel No Pain 4+ ability against mortal wounds, Psychic Attacks and Critical Wounds caused by attacks with the [Devastating Wounds] ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d58-2383-dd6a-15ae" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stone of Eldritch Fury" hidden="false" id="ee05-f0eb-bbaa-5960">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9e08-5363-ab9b-58f3" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Stone of Eldritch Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="efae-9000-5236-ba06">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Psyker model only. Add 12&quot; to the Range characteristic of ranged Psychic weapons equipped by the bearer.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Torc of Morai-Heg" hidden="false" id="bfba-62e0-2784-ef48">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1b7-f0e5-61fc-47ef" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Torc of Morai-Heg" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cd0e-c3ec-445d-e0e8">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Psyker model only. Once per turn, when your opponent targets a unit from their army within 12&quot; of the bearer with a Stratagem, the bearer can use this Enhancement. If it does, increase the CP cost of that usage of that Stratagem by 1CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Skysplinter Assault Enhancements" id="9a90-50ad-4693-a585" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="7596-e2c8-71fb-1b4f" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Phantasmal Smoke" hidden="false" id="389c-195a-faaa-3bd6">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Phantasmal Smoke" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7a67-9623-c55d-3447">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Drukhari**^^ model only. While the bearer’s unit is wholly within 6&quot; of a friendly ^^**Drukhari Transport**^^:
-Models in the bearer’s unit have the  Stealth ability
-Each time a ranged attack targets the bearer&apos;s unit, models in that unit have the Benefit of Cover against that attack.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44cf-4c0b-5fe6-6406"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8e2a-a13e-5060-c851" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sadistic Fulcrum" hidden="false" id="3151-c2de-c0cc-b8d0">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c729-5146-1bfd-da46"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed6-4911-25f6-6418"/>
-              </constraints>
-              <profiles>
-                <profile name="Sadistic Fulcrum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cafe-b553-9431-642d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Drukhari**^^ model only. Each time you spend 1 Pain token to Empower the bearer’s unit in the Shooting phase, select one friendly ^^**Drukhari Transport**^^ within 6&quot; of the bearer’s unit; until the end of the phase, each time that ^^**Transport**^^ makes an attack, you can re-roll the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Spiteful Raider" hidden="false" id="c049-95f9-58cb-b70a">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b20f-672c-2f05-d98d"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8e71-7a8a-8b00-2deb"/>
-              </constraints>
-              <profiles>
-                <profile name="Spiteful Raider" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="461-55b1-d90-cb55">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Drukhari**^^ model only. Each time the bearer’s unit destroys an enemy unit in the Fight phase, if that enemy unit was within range of one or more objective markers when the bearer’s unit was selected to fight, you gain 1 additional Pain token.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nightmare Shroud" hidden="false" id="894c-7f9e-5f07-1dc3">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-              </costs>
-              <profiles>
-                <profile name="Nightmare Shroud" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1d0-5ecf-c0ca-3424">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Drukhari**^^ model only. Each time the bearer’s unit disembarks from a ^^**Transport**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a35e-889d-942b-61db"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a435-9439-820c-a08a" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d3-4115-ed50-e603"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Spirit Conclave Enhancements" id="b5fd-4dbd-d000-58fe" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Light of Clarity" hidden="false" id="9898-7c41-c373-b3c9">
-              <profiles>
-                <profile name="Light of Clarity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2337-b562-74ba-f2be">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12&quot; of the bearer. Until the start of your next Command phase, add 1 to the Objective Control characteristic of Infanty models in that unit and add 3 to the Objective Control characteristic of Monster models in that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="07a0-1757-6048-0960" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7ffc-5ee2-121a-2659" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stave of Kurnous" hidden="false" id="3f52-2f29-e0d8-8bff">
-              <profiles>
-                <profile name="Stave of Kurnous" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b6db-35b5-dc12-881d">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12&quot; of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="00cc-ad16-982a-9eb4" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7ffc-5ee2-121a-2659" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rune of Mists" hidden="false" id="0874-acfa-0e5d-ad23">
-              <profiles>
-                <profile name="Rune of Mists" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a161-0012-0894-e263">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12&quot; of the bearer. Until the start of your next Command phase, each time a ranged attack targets that unit, unless the attacking model is within 18, models in that unit have the Benefit of Cover against that attack.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0e1-cca7-58ae-be32" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7ffc-5ee2-121a-2659" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Higher Duty" hidden="false" id="9647-0b96-2add-51a4">
-              <profiles>
-                <profile name="Higher Duty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="298c-20bc-8ac1-f6ea">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Spiritseer model only. Oncer per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9&quot; of the bearer, the bearer&apos;s unit can make a normal move of up to 6&quot;.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4383-f39e-6dc3-eb54" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7ffc-5ee2-121a-2659" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d281-1aa0-d88d-0c08" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="fc94-43bf-5247-8e7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Warhost Enhancements" id="e26f-c156-51e9-9608" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="3c31-6fac-9914-827a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc8e-1e1d-c538-77d8"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Psychic Destroyer" hidden="false" id="6605-bd06-4048-9e14" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Psychic Destroyer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f73-8bbc-22e7-6075">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="35aa-5307-9d7e-b64a" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Psychic Destroyer" field="annotation" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
-                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
-                    <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" position="-1"/>
-                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons" join="" arg="+0"/>
-                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Phoenix Gem" hidden="false" id="607f-8f46-48c4-edb7" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Phoenix Gem" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bcf5-ae36-1885-a978">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5710-5647-9b95-6a84" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gift of Foresight" hidden="false" id="3c85-7aba-e35d-27be" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Gift of Foresight" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5401-a04-29e8-1b72">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. Once per battle round, you can target the bearer&apos;s unit with the Command Re-roll Stratagem for 0CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6606-c01a-6c52-1af1" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Timeless Strategist" hidden="false" id="dab9-c5f2-a09f-c524" collective="false">
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-              </costs>
-              <profiles>
-                <profile name="Timeless Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be33-f12d-911a-8fc4">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a6be-4c6d-42b6-c89e" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Windrider Host Enhancements" id="0270-1299-a721-0221" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Firstdrawn Blade" hidden="false" id="cb45-ba0f-165f-45dc">
-              <profiles>
-                <profile name="Firstdrawn Blade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2571-55a7-42af-3eca">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Mounted model only. Models in the bearer&apos;s unit have the Scouts 9&quot; ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3894-30ab-46e4-b4a3" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mirage Field" hidden="false" id="9867-5fd8-af23-34a8">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="67b6-4365-f36b-c90c" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Mirage Field" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="278f-3b22-7414-a670">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Mounted model only. Each time an attack targets the bearer&apos;s unit, subtract 1 from the Hit roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Seersight Strike" hidden="false" id="116d-f3dd-042d-4c4f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce28-9d57-32e6-2fc3" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Seersight Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d212-dcdb-bb36-2f21">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Mounted Psyker model only. Psychic weapons equipped by the bearer have the [Anti-Monster 2+] and [Anti-Vehicle 2+] abilities.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Echoes of Ulthanesh" hidden="false" id="81a9-3e2f-0181-e550">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b5fa-0d74-cbd2-6e35" includeChildSelections="true"/>
-              </constraints>
-              <profiles>
-                <profile name="Echoes of Ulthanesh" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc5d-5a47-df20-8538">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Mounted model only. In your Command phase, roll one D6, adding 1 to the result if the bearer is not within your deployment zone, and adding an additional 1 to the result if the bearer is within your opponent&apos;s deployment zone: on a 5+, you gain 1CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd4-a878-d8d6-eba3" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c8a3-920b-166b-30d9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Covenite Coterie Enhancements" id="e3d8-9491-ccf9-08cd" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="47c7-52f9-c23d-1e4e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Master Regenesist" hidden="false" id="1cbe-8230-62e6-55ed">
-              <profiles>
-                <profile name="Master Regenesist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2277-e9ba-a3b3-88f0">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Haemonculus**^^ model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer&apos;s unit instead of D3+1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c60-4742-2efe-77c9"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="032e-f7c3-47c6-89c6" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Master Nemesine" hidden="false" id="7d78-1fd9-b1ab-f8bc">
-              <profiles>
-                <profile name="Master Nemesine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3736-b495-1fa9-38d6">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Haemonculus**^^ model only. The bearer&apos;s weapons have the ^^**[Anti-Beast 2+]**^^ and ^^**[Anti-Monster 4+]**^^ abilities.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28ee-4fd1-96bb-4a6a"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3383-2daa-dcaa-4bed" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Master Artisan" hidden="false" id="8650-1a6c-82ee-1243">
-              <profiles>
-                <profile name="Master Artisan" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2f23-cfc8-d38d-0c66">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Haemonculus**^^ model only. Add 1 to the bearer&apos;s Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer&apos;s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6019-6d46-2ea1-1aea"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="23bc-8718-366d-d00c" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Master Repugnomancer [Aura]" hidden="false" id="2cb1-da69-7c94-4bd2">
-              <profiles>
-                <profile name="Master Repugnomancer [Aura]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="46d4-2c4c-38d7-c2ca">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Haemonculus**^^ model only. Add 3&quot; to the range of the bearer&apos;s Fear Incarnate ability, and each time a friendly ^^**Drukhari**^^ within 9&quot; of the bearer fails a Battle-shock test or is destroyed, roll one D6; on a 4+, you gain 1 Pain token.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="18a3-365c-b4f0-54ae" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e288-0627-005a-384a"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d343-eea2-0312-df2b" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a4b-8f66-1adb-a623" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Kabalite Cartel Enhancements" id="1e96-f965-304b-f853" hidden="false">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="b033-0c01-012e-fcca" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8515-9a99-06ef-7ee7" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Leechbite Plate" hidden="false" id="7166-b2d0-75ef-5fe7">
-              <profiles>
-                <profile name="Leechbite Plate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4d7b-ba0b-2cb4-5325">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Archon**^^ model only. The bearer has a Save characteristic of 3+. At the start of either player&apos;s Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time in each battle round that your opponent targets a unit from their army that is within 3&quot; of the bearer with a Stratagem, increase that Stratagems cost by 1CP for that usage.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -41155,7 +39431,7 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f0ce-9f82-7a54-2203" includeChildSelections="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -41163,39 +39439,11 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
                 <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Webway Awl" hidden="false" id="9754-99a2-5d48-bb74">
+            <selectionEntry type="upgrade" import="true" name="Dark Charisma" hidden="false" id="14ff-7d7e-2433-71fc">
               <profiles>
-                <profile name="Webway Awl" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a375-2d17-c4e2-a677">
+                <profile name="Dark Charisma" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a8d5-5569-c6e7-24fa">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Archon**^^ model only. Models in the bearer&apos;s unit have the Deep Strike ability, and you can target the bearer&apos;s unit with the Rapid Ingress Stratagem for 0CP.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60be-66a6-a920-a6c2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="93ad-7e09-acf5-ade3" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Informant Network" hidden="false" id="14ff-7d7e-2433-71fc">
-              <profiles>
-                <profile name="Informant Network" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a8d5-5569-c6e7-24fa">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Archon**^^ model only. At the start of the Declare Battle Formations step, select up to three ^^**Kabalite Warriors**^^ and/or ^^**Hand of the Archon**^^ units from your army; those units gain the Infiltrators ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has an Objective Control characteristic of 5 and you can re-roll Battle-shock tests taken for the bearer.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -41204,7 +39452,7 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1c43-5b1f-6bdb-582e" includeChildSelections="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -41219,170 +39467,7 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Towering Arrogance" hidden="false" id="f775-311c-a54a-308a">
-              <profiles>
-                <profile name="Towering Arrogance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f05d-78ef-d49c-8313">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Archon**^^ models only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6c05-f06f-9b9f-890d" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f01a-603a-4f3d-2b6d" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6918-0c22-9656-9b67" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Spectacle of Spite Enhancements" id="6ffc-9b08-34ac-a121" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pharmacophex" hidden="false" id="bd2d-64aa-6077-a6ce">
-              <profiles>
-                <profile name="Pharmacophex" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2972-3837-b0bf-2117">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Succubus**^^ model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer&apos;s unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af1f-75b2-a205-5de3" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a9cd-bc3f-d23b-d107" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Chronoshard" hidden="false" id="0246-f867-40c3-b190">
-              <profiles>
-                <profile name="Chronoshard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7111-3acd-d858-a7aa">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^** Succubus**^^ model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer&apos;s unit have the Fights First ability.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cfe-71fd-3354-8bfd" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="75e8-328f-aadc-43e0" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Periapt of Torments" hidden="false" id="d0fe-007a-1800-d7c2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="973c-72d9-4891-2362" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c848-5319-649d-9dc3" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Periapt of Torments" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2f5-c8e0-4375-87d7">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Succubus**^^ model only. Enemy units cannot use the Fire Overwatch stratagem to shoot at the bearer&apos;s unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Morghenna&apos;s Curse" hidden="false" id="d1b4-483d-6dc9-7290">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46aa-1fb5-f22d-d206" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a841-b748-f212-20fe" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3572-54c5-ef5a-4caa" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Morghenna&apos;s Curse" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="01be-511c-98aa-6d7b">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^**Succubus**^^ model only. Improve the Armour Penetration and Damage characteristics of the bearer&apos;s melee weapons by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1015-db48-a2fa-c7da" shared="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="7008-2116-f479-a791" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -41396,6 +39481,9 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Core Enhancements" hidden="false" id="9202-aad5-067a-c8e1" type="selectionEntryGroup" targetId="0266-f6f5-7d86-a7ac"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Guiding Fate" id="97ab-62de-dccd-4a8b" hidden="false" collapsible="true">
       <comment>Crusade content - Aeldari</comment>
@@ -43891,16 +41979,8 @@ Each time a ranged attack targets the bearer&apos;s unit, models in that unit ha
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="c324-e193-e23c-7d2e" name="Battle Focus" hidden="false">
-      <description>If your Army Faction is AELDARI, at the start of the battle round, you receive a number of Battle Focus tokens based on the battle size, as shown below:
-
-
-■ Incursion - 2
-■ Strike Force - 4
-■ Onslaught - 6
-
-
-Each time one of the triggers shown in the Agile Manoeuvres section of your codex occurs, you can spend one Battle focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.</description>
+    <rule id="c324-e193-e23c-7d2e" name="Seers’ Guidance" hidden="false">
+      <description>Once per battle round, you can target one unit from your army with this ability with the Command Re-roll Stratagem for 0CP.</description>
     </rule>
     <rule name="Power from Pain" hidden="false" id="5e02-2ddc-f55-e6dd">
       <description>All **^^Drukhari^^** units have a Pain ability, tagged with the word &apos;Pain&apos;. Pain abilities only apply to a unit while it is Empowered. If your Army Faction is **^^Drukhari^^**, you can Empower units from your army with Pain abilities by spending Pain tokens (see below).
@@ -43916,7 +41996,9 @@ Each time you gain a Pain token, keep it to one side – this is your Pain toke
 
 **EMPOWERED THROUGH PAIN**
 
-Each Pain ability will state when you can spend Pain tokens to Empower that unit. When you do, until the end of the phase, that unit is Empowered and all Pain abilities it has take effect. While an Attached unit is Empowered, the Pain abilities of all Leader and Bodyguard units in that unit take effect - you do not need to spend additional Pain tokens to activate each of those Pain abilities.</description>
+Each Pain ability will state when you can spend Pain tokens to Empower that unit. When you do, until the end of the phase, that unit is Empowered and all Pain abilities it has take effect. While an Attached unit is Empowered, the Pain abilities of all Leader and Bodyguard units in that unit take effect - you do not need to spend additional Pain tokens to activate each of those Pain abilities.
+
+At the start of the battle, you gain 1 Pain token.</description>
     </rule>
     <rule name="Disparate Paths" id="10d8-3547-47ae-baab" hidden="false">
       <description>When mustering you army, you can include Harlequins units in your army, even though they do not have the Asuryani Faction keyword. Unless otherwise stated, you cannot select Harlequins or Ynnari as your Army Faction.</description>
