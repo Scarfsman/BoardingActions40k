@@ -338,13 +338,13 @@
     <categoryEntry id="5c0e-2250-dd3a-1df9" name="Faction: White Scars" hidden="false"/>
     <categoryEntry id="5c0e-4c31-d51b-e470" name="Warlord" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16ac-a6c9-6d9a-d6d5" type="min"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d50-6d29-4f91-8f73" type="max"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16ac-a6c9-6d9a-d6d5" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d50-6d29-4f91-8f73" type="max"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="1" field="16ac-a6c9-6d9a-d6d5">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -466,44 +466,79 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
-    <categoryEntry name="You can select up to two of the below Units (Duplicates are not allowed)" id="49ba-7095-f08c-bc51" hidden="false">
+    <categoryEntry name="You can select up to two of the below Units (Duplicates are not allowed):" id="49ba-7095-f08c-bc51" hidden="false">
       <constraints>
         <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d2d4-ed67-b32e-00e9" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="You can include up to three of each of the following units" id="6ebf-4f84-bed1-f067" hidden="false"/>
-    <categoryEntry name="You can include up to one of each of the following units" id="6f05-f221-113f-3771" hidden="false"/>
-    <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" id="bddf-cba5-fce4-c27b" hidden="false"/>
-    <categoryEntry name="You can include up to one of the following units" id="e8c2-b45c-5c10-15cc" hidden="false"/>
+    <categoryEntry name="You can include up to three of each of the following units:" id="6ebf-4f84-bed1-f067" hidden="false"/>
+    <categoryEntry name="You can include up to one of each of the following units:" id="6f05-f221-113f-3771" hidden="false"/>
+    <categoryEntry name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units:" id="bddf-cba5-fce4-c27b" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units:" id="e8c2-b45c-5c10-15cc" hidden="false">
+      <comment>#1</comment>
+    </categoryEntry>
+    <categoryEntry name="You can include up to three of the following unit:" id="f455-69e5-1ba9-8a41" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following unit if you include one or more KABALITE WARRIORS units:" id="12ec-f6dd-434d-9133" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units if you include one or more WRACKS units:" id="5fc7-1e4a-6ba1-2ddf" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units if you include one or more WYCHES units:" id="f21e-1d8f-d83e-a395" hidden="false"/>
+    <categoryEntry name="You can include up to one of the following units:" id="e940-7f33-d746-c403" hidden="false">
+      <comment>#2</comment>
+    </categoryEntry>
+    <categoryEntry name="You can include up to one of the following units:" id="b931-a626-e600-a252" hidden="false">
+      <comment>top one for characters</comment>
+    </categoryEntry>
+    <categoryEntry name="You can include up to one of the following units:" id="3e5c-509c-a46e-4c41" hidden="false">
+      <comment>#3</comment>
+    </categoryEntry>
+    <categoryEntry name="You can include up to two of the following unit:" id="3df4-0f68-3e09-4d68" hidden="false"/>
+    <categoryEntry name="You can include up to two of each of the following units:" id="49c3-53c3-1cc6-d189" hidden="false"/>
+    <categoryEntry name="If you do not include any other CHARACTER models, you can include one of the following unit:" id="bc02-1167-b2aa-a173" hidden="false"/>
+    <categoryEntry name="You can include up to two of the following units:" id="d855-281b-b949-56b0" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
       <categoryLinks>
         <categoryLink id="d5de-ee57-ad4b-e4b7" name="Configuration" hidden="false" targetId="4ac9-fd30-1e3d-b249" primary="false"/>
-        <categoryLink name="You can select up to two of the below Units (Duplicates are not allowed)" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
+        <categoryLink name="You can include up to one of the following units:" hidden="false" id="316a-eeb0-0aa2-8eb3" targetId="b931-a626-e600-a252">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f281-b54e-3465-3585" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="You can include up to one of the following unit if you include one or more KABALITE WARRIORS units:" hidden="false" id="9d32-bfa0-7421-cca8" targetId="12ec-f6dd-434d-9133"/>
+        <categoryLink name="You can include up to one of the following units if you include one or more WRACKS units:" hidden="false" id="9edc-36ea-3f6d-225a" targetId="5fc7-1e4a-6ba1-2ddf"/>
+        <categoryLink name="You can include up to one of the following units if you include one or more WYCHES units:" hidden="false" id="b2bb-4ea0-5b3f-47d8" targetId="f21e-1d8f-d83e-a395"/>
+        <categoryLink name="You can select up to two of the below Units (Duplicates are not allowed):" hidden="false" id="a2b6-4385-b6f9-9cf7" targetId="49ba-7095-f08c-bc51">
           <comment>You can only</comment>
         </categoryLink>
-        <categoryLink name="You can include up to three of each of the following units" hidden="false" id="60ba-8814-26ad-6d99" targetId="6ebf-4f84-bed1-f067"/>
-        <categoryLink name="You can include up to one of each of the following units" hidden="false" id="518c-4288-910e-c296" targetId="6f05-f221-113f-3771"/>
-        <categoryLink id="16fc-8e39-ee82-cf96" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
-        <categoryLink id="c932-1176-dc9-b390" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-        <categoryLink id="b3ba-1e1a-a92d-60d2" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="false"/>
-        <categoryLink id="6d77-b79d-3ccb-6bf6" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-        <categoryLink id="f5d5-b603-69b3-411c" name="Swarm" hidden="false" targetId="b00b-5bae-444f-964e" primary="false"/>
-        <categoryLink id="6503-057c-cb62-badb" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
-        <categoryLink id="87ea-37d2-7b40-c708" name="Beast" hidden="false" targetId="4c3e-9310-a516-3590" primary="false"/>
-        <categoryLink id="8e39-465e-7cfc-3085" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
-        <categoryLink id="2c76-65c5-bad0-8208" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
-        <categoryLink id="8243-857b-2133-8887" name="Drone" hidden="false" targetId="2471-e2e0-3f55-d6cb" primary="false"/>
-        <categoryLink id="cf3e-2c24-fe34-39f9" name="Dedicated Transport" hidden="false" targetId="ba07-411c-2832-1f79" primary="false"/>
+        <categoryLink name="If you do not include any other CHARACTER models, you can include one of the following unit:" hidden="false" id="668a-fc5e-f4e4-71ba" targetId="bc02-1167-b2aa-a173"/>
+        <categoryLink name="You can include up to three of each of the following units:" hidden="false" id="60ba-8814-26ad-6d99" targetId="6ebf-4f84-bed1-f067"/>
+        <categoryLink name="You can include up to three of the following unit:" hidden="false" id="85c1-7fd1-89cc-6329" targetId="f455-69e5-1ba9-8a41"/>
+        <categoryLink name="You can include up to one of each of the following units:" hidden="false" id="518c-4288-910e-c296" targetId="6f05-f221-113f-3771"/>
         <categoryLink id="a41a-6330-4718-d8d2" name="Unit" hidden="false" targetId="1160-70ae-a862-b1a8" primary="false"/>
         <categoryLink name="Allied Units" hidden="false" id="8d39-1cfc-6e44-2dae" targetId="887b-ab87-92a2-20f5"/>
-        <categoryLink name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units" hidden="false" id="4c2a-b0f1-01f2-56a8" targetId="bddf-cba5-fce4-c27b"/>
-        <categoryLink name="You can include up to one of the following units" hidden="false" id="4b00-95e6-2296-f6b8" targetId="e8c2-b45c-5c10-15cc">
+        <categoryLink name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units:" hidden="false" id="4c2a-b0f1-01f2-56a8" targetId="bddf-cba5-fce4-c27b"/>
+        <categoryLink name="You can include up to two of the following units:" hidden="false" id="1906-24a9-3866-838b" targetId="d855-281b-b949-56b0">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1169-f810-f83e-cf7f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="You can include up to one of the following units:" hidden="false" id="4b00-95e6-2296-f6b8" targetId="e8c2-b45c-5c10-15cc">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5479-b3ac-a01b-9eb3" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="You can include up to one of the following units:" hidden="false" id="2a5c-80ad-7f21-05aa" targetId="e940-7f33-d746-c403">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bc8e-401f-dba3-3ab3" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="You can include up to one of the following units:" hidden="false" id="7d31-8833-4efd-577d" targetId="3e5c-509c-a46e-4c41">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6b71-ad44-d49c-e334" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="You can include up to two of the following unit:" hidden="false" id="e7c5-55f3-1ffc-e9e0" targetId="3df4-0f68-3e09-4d68"/>
+        <categoryLink name="You can include up to two of each of the following units:" hidden="false" id="294e-ce45-1b45-b448" targetId="49c3-53c3-1cc6-d189"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="500" field="51b2-306e-1021-d207" scope="force" shared="true" id="5e56-36ca-cbc0-ea2b" includeChildSelections="true"/>
@@ -646,7 +681,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Show Legends" hidden="false" id="9ed-cbf4-bfe5-90bf">
+    <selectionEntry type="upgrade" import="true" name="Show Legends" hidden="true" id="9ed-cbf4-bfe5-90bf">
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="8f35-ad49-afb5-715" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -687,9 +722,10 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Show/Hide Options" hidden="false" id="e8ef-836a-a9d1-901d">
       <entryLinks>
-        <entryLink import="true" name="Show Legends" hidden="false" type="selectionEntry" id="892f-57ca-d650-7199" targetId="9ed-cbf4-bfe5-90bf"/>
-        <entryLink import="true" name="Show Unaligned Forces" hidden="false" type="selectionEntry" id="985-e753-2e94-859" targetId="2973-ea51-7f8d-5403"/>
-        <entryLink import="true" name="Show Unaligned Fortifications" hidden="false" type="selectionEntry" id="4d37-22c-a45c-64f8" targetId="e916-2cf4-a49d-b8c4"/>
+        <entryLink import="true" name="Show Legends" hidden="true" type="selectionEntry" id="892f-57ca-d650-7199" targetId="9ed-cbf4-bfe5-90bf"/>
+        <entryLink import="true" name="Show Unaligned Forces" hidden="true" type="selectionEntry" id="985-e753-2e94-859" targetId="2973-ea51-7f8d-5403"/>
+        <entryLink import="true" name="Show Unaligned Fortifications" hidden="true" type="selectionEntry" id="4d37-22c-a45c-64f8" targetId="e916-2cf4-a49d-b8c4"/>
+        <entryLink import="true" name="Show Ineligible Units" hidden="false" id="6767-a3a2-5d92-ff1d" type="selectionEntry" targetId="ca08-cb45-b682-87fb"/>
       </entryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7478-2e95-2444-b500" type="min"/>
@@ -709,7 +745,7 @@
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Crusade Options" id="e7cc-312b-6c80-450d" hidden="false">
+        <selectionEntryGroup name="Crusade Options" id="e7cc-312b-6c80-450d" hidden="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -955,6 +991,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977c-2d1e-aa65-6364" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show Ineligible Units" hidden="false" id="ca08-cb45-b682-87fb"/>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="8bf7-8812-923d-29e4" name="Pistol" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
@@ -9092,7 +9129,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" id="c5b6-3c9e-7542-247d" hidden="false">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Core Enhancements" id="0266-f6f5-7d86-a7ac" hidden="false" flatten="false" collapsible="false">
+        <selectionEntryGroup name="Core Enhancements" id="0266-f6f5-7d86-a7ac" hidden="false" flatten="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Superior Boarding Tactics" hidden="false" id="93c0-9262-cb33-f44b">
               <profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3c7" name="T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-8dfh" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3c7" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-8dfh" gameSystemRevision="1" revision="132" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="Void Combat Discipline" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>Units from your army with the For the Greater Good ability lose that ability and T’AU EMPIRE units from your army gain this one.
@@ -134,7 +134,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="110e-2c9f-cf-7f84" primary="false" name="Grenades"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1465-1097-98fc-5e80" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="5035-d8d0-822b-e2c" id="09ba-a2a8-e3df-126a" primary="false" name="Cadre Fireblade"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="5bb7-8d28-53af-2c3b" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="5bb7-8d28-53af-2c3b" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="25ae-b1b2-69c-d031">
@@ -350,7 +350,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="fc08-b767-7db5-2bc8" primary="false" name="Infantry"/>
         <categoryLink targetId="e6e-aad6-ee91-7c3c" id="4b91-31f8-9a09-7aba" primary="false" name="Ethereal"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="5afa-8691-8230-d288" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="44f9-9bce-9b28-a043" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="44f9-9bce-9b28-a043" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <profiles>
         <profile name="Ethereal" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="eb0c-e2d4-1b25-e480">
@@ -555,7 +555,7 @@ Each time a model in this unit makes a ranged attack, it can ignore other model 
         <categoryLink targetId="3d58-2655-391e-ecc" id="aefb-903f-5770-8377" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="1685-dd28-8e90-e10d" id="7112-1cb3-bebe-80a2" primary="false" name="Markerlight"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="6b10-9998-7e32-b888" primary="false" name="Infantry"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="54d8-2501-40a5-b638" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="54d8-2501-40a5-b638" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <profiles>
         <profile name="Darkstrider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="815c-4d84-672e-8f6e">
@@ -685,7 +685,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="327b-5317-ea54-ae90" id="250d-2ac0-62a-6849" primary="false" name="Fire Warrior"/>
         <categoryLink targetId="e3bc-69df-88a0-e5de" id="103c-3d2c-7040-708e" primary="false" name="Strike Team"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2009-58fd-146c-d218" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="3c68-ec30-c1b4-7e62" primary="true" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="3c68-ec30-c1b4-7e62" primary="true" name="You can include up to three of each of the following units:"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Fire Warriors" hidden="false" id="acda-c68b-e687-90d6" defaultSelectionEntryId="1c19-f20d-8e7b-db5d" collective="false" sortIndex="3">
@@ -995,7 +995,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="327b-5317-ea54-ae90" id="c858-dc0d-f91e-c104" primary="false" name="Fire Warrior"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="40c5-28c8-ef71-65e3" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="8fa3-ee6b-447e-3cff" id="bd32-f9d4-352a-19e5" primary="false" name="Breacher Team"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="42b5-805b-da80-1d35" primary="true" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="42b5-805b-da80-1d35" primary="true" name="You can include up to three of each of the following units:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Breacher Fire Warriors" hidden="false" id="91e6-a9de-d33f-d0ab" sortIndex="3">
@@ -1211,7 +1211,7 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="90e5-eea0-9b26-dac4" primary="false" name="Kroot"/>
         <categoryLink targetId="42fd-5cd2-643a-1bb8" id="e66-2d2a-aab2-caa3" primary="false" name="Carnivores"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="141f-da38-683c-7cc" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="fbdf-bdcc-e66e-81cf" primary="true" name="You can include up to one of each of the following units"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="fbdf-bdcc-e66e-81cf" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Carnivores" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e373-8a0-53f2-d26d">
@@ -1258,7 +1258,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Kroot Carnivores" hidden="false" id="777-6211-bea1-526d" collective="false">
               <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
                 <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="932e-ffcc-e5c6-8cce"/>
               </constraints>
               <entryLinks>
@@ -1325,7 +1325,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e1ac-bca1-42e5-a7e7"/>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="932e-ffcc-e5c6-8cce"/>
           </constraints>
         </selectionEntryGroup>
@@ -1432,27 +1432,12 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
             <condition type="greaterThan" value="10" field="selections" scope="d631-3ca5-e206-4e6a" childId="model" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="3" field="1eab-7969-2e3e-4f2d">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" value="6ebf-4f84-bed1-f067" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="6ebf-4f84-bed1-f067" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="3178-bc88-dffe-525e" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="3178-bc88-dffe-525e" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1527,6 +1512,26 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
           </modifiers>
           <comment>Crusade modifiers</comment>
         </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Adjustments for Kroot Boarding Party</comment>
+          <modifiers>
+            <modifier type="add" value="6ebf-4f84-bed1-f067" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set-primary" value="6ebf-4f84-bed1-f067" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="1eab-7969-2e3e-4f2d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5e2d-92d9-e331-016c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krootox Riders" hidden="false" id="c523-a2e2-a398-ea00">
@@ -1536,7 +1541,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="3abc-7184-ffb3-7e03" id="119d-c236-2189-72f7" primary="false" name="Krootox Riders"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1924-9c25-d269-900b" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="81d5-9df1-95e-763" primary="false" name="Grenades"/>
-        <categoryLink targetId="bddf-cba5-fce4-c27b" id="b178-2cdb-5d8a-a99f" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="b178-2cdb-5d8a-a99f" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Krootox Riders" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8d43-6b77-9b8d-a0a3">
@@ -1927,7 +1932,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="3d58-2655-391e-ecc" id="e439-38ac-fd0-1d24" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink name="Grenades" hidden="false" id="8fee-4d53-4a2e-ccfa" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="2cfc-b40d-89a6-3248" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="5fbe-f897-5b43-56a1" targetId="c05d-f4c3-f091-4938"/>
@@ -2409,7 +2414,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="1685-dd28-8e90-e10d" id="24ba-af0c-f9b6-cda7" primary="false" name="Markerlight"/>
         <categoryLink targetId="c3af-6e36-252c-1006" id="f4a0-3777-fb6a-aaf5" primary="false" name="Pathfinder Team"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a3c5-e9f0-6643-5053" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="6ebf-4f84-bed1-f067" id="80ca-160c-b8b4-5749" primary="true" name="You can include up to three of each of the following units"/>
+        <categoryLink targetId="6ebf-4f84-bed1-f067" id="80ca-160c-b8b4-5749" primary="true" name="You can include up to three of each of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Target Uploaded" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85b7-6da7-e356-82e5">
@@ -3032,7 +3037,7 @@ Each time you set up a KROOT CARNIVORES unit in an Entry Zone, you can also set 
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="5155-eead-ba9f-ede" primary="false" name="Infantry"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="1377-b903-4470-40db" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="b0eb-efa7-735c-4174" id="5f4d-2556-8cc7-9a81" primary="false" name="Vespid Stingwings"/>
-        <categoryLink targetId="6f05-f221-113f-3771" id="bff4-5f9b-e0f8-d516" primary="true" name="You can include up to one of each of the following units"/>
+        <categoryLink targetId="6f05-f221-113f-3771" id="bff4-5f9b-e0f8-d516" primary="true" name="You can include up to one of each of the following units:"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30db-1915-83b0-8dc9"/>
@@ -3359,7 +3364,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="412e-575f-df98-6171" primary="false" name="Kroot"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2cc9-49c6-2062-951" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="18e9-bb22-6283-f077" id="4eff-de59-5847-6dd0" primary="false" name="Hounds"/>
-        <categoryLink targetId="bddf-cba5-fce4-c27b" id="fd8e-07dd-b6c4-0e2d" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="fd8e-07dd-b6c4-0e2d" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units:"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Scouts" hidden="false" type="rule" id="dd79-1434-64a2-1db7" targetId="ada6-bac1-ffe0-d6f7">
@@ -3914,7 +3919,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="79c5-9fc4-7b97-7c3f" id="eceb-d043-20a4-26a5" primary="false" name="Kroot"/>
         <categoryLink targetId="d4bd-9928-e74e-9605" id="496e-ba6d-84c4-ec23" primary="false" name="Farstalkers"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="6135-96b1-45a1-e044" primary="false" name="Faction: T&apos;au Empire"/>
-        <categoryLink targetId="bddf-cba5-fce4-c27b" id="5bb8-8208-fb2d-7866" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units"/>
+        <categoryLink targetId="bddf-cba5-fce4-c27b" id="5bb8-8208-fb2d-7866" primary="true" name="For each Kroot Carnivores unit you include, you can include up to one of each of the following units:"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -4218,7 +4223,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="5409-827f-b23f-5ac" id="8fab-c07f-bfc6-2fb4" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="2d94-6def-9a80-4497" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="205d-dcad-4d0-ccae" id="ba40-7585-9328-5e46" primary="false" name="Sunforge"/>
-        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="91ac-2fb9-e99e-9b9f" primary="true" name="You can include up to one of the following units"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="91ac-2fb9-e99e-9b9f" primary="true" name="You can include up to one of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Sunforge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="883e-96af-3014-6550">
@@ -4436,7 +4441,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="5409-827f-b23f-5ac" id="5ee5-4535-217e-6423" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="fc8b-b78b-aaa6-ee4a" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="d372-6d2c-2df2-8e91" id="e62a-b590-b74b-3532" primary="false" name="Fireknife"/>
-        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="dc1a-ccb3-7a84-73f6" primary="true" name="You can include up to one of the following units"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="dc1a-ccb3-7a84-73f6" primary="true" name="You can include up to one of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Fireknife" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3d6-87dc-9a02-a9eb">
@@ -4686,7 +4691,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="5409-827f-b23f-5ac" id="e408-ef89-b30b-e447" primary="false" name="Crisis"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="384-b2b8-b4a7-7a1" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="cd97-19b6-3957-4c78" id="1776-2586-abb5-4ede" primary="false" name="Starscythe"/>
-        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="9cc0-fdee-bd38-b292" primary="true" name="You can include up to one of the following units"/>
+        <categoryLink targetId="e8c2-b45c-5c10-15cc" id="9cc0-fdee-bd38-b292" primary="true" name="You can include up to one of the following units:"/>
       </categoryLinks>
       <profiles>
         <profile name="Starscythe" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="36a5-3ecd-bc4d-79f">
@@ -4937,7 +4942,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="fd64-b908-8b61-b130" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="7245-1526-77cc-5de8" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2b-e589-40b4-d88" id="64e5-74ec-2c81-f4e8" primary="false" name="Trail Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="0cc2-80f3-c40a-cc2a" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="0cc2-80f3-c40a-cc2a" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Trail Shaper" hidden="false" id="1cdc-5918-cdf7-96b9" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -5142,7 +5147,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="924-77a8-c451-eaa1" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="a9e4-d3bc-1cc6-d355" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="f3d0-13af-62bd-1054" id="5011-5ec-592-c78d" primary="false" name="War Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="1eec-6677-70ac-cb24" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="1eec-6677-70ac-cb24" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot War Shaper" hidden="false" id="edbd-db07-c1af-7726" typeId="c547-1836-d8a-ff4f" typeName="Unit">
@@ -5434,7 +5439,7 @@ Designer’s Note: Place an Oversight Drone token next to the bearer, removing i
         <categoryLink targetId="39f9-dcd3-1e80-fa1f" id="af90-e75d-45d0-5f0b" primary="false" name="Shaper"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e303-dd66-1d5c-e25" primary="false" name="Faction: T&apos;au Empire"/>
         <categoryLink targetId="2c5e-7638-d746-1d27" id="300a-5784-fadf-9c3f" primary="false" name="Flesh Shaper"/>
-        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed)"/>
+        <categoryLink targetId="49ba-7095-f08c-bc51" id="2c8c-ddee-35f1-ed80" primary="true" name="You can select up to two of the below Units (Duplicates are not allowed):"/>
       </categoryLinks>
       <profiles>
         <profile name="Kroot Flesh Shaper" hidden="false" id="e52-6ec5-f492-4701" typeId="c547-1836-d8a-ff4f" typeName="Unit">

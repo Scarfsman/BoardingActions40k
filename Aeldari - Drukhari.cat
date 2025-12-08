@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Drukhari" gameSystemId="sys-352e-adc2-7639-8dfh" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Xenos - Drukhari" gameSystemId="sys-352e-adc2-7639-8dfh" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Aeldari - Aeldari Library" id="d965-4d5b-d10b-350b" targetId="dfcf-1214-b57-2205"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Archon" hidden="false" type="selectionEntry" id="f96f-85f3-fda6-40d9" targetId="5c1c-fa4a-3234-c711"/>
     <entryLink import="true" name="Beastmaster [Legends]" hidden="false" type="selectionEntry" id="e44f-a5c6-e78-cce4" targetId="f99a-af49-64c0-9bed"/>
-    <entryLink import="true" name="Court of the Archon" hidden="true" type="selectionEntry" id="1cfc-355a-ccc1-176b" targetId="b221-43a3-8bee-117c"/>
+    <entryLink import="true" name="Court of the Archon [Legends]" hidden="false" type="selectionEntry" id="1cfc-355a-ccc1-176b" targetId="b221-43a3-8bee-117c"/>
     <entryLink import="true" name="Drazhar" hidden="false" type="selectionEntry" id="80eb-f424-6a35-c0c9" targetId="a30b-b966-d264-e935"/>
-    <entryLink import="true" name="Incubi" hidden="false" type="selectionEntry" id="a658-2f16-a5ad-f228" targetId="1529-793d-481b-82bf">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9805-eaee-0a84-f86f" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink import="true" name="Incubi" hidden="false" type="selectionEntry" id="a658-2f16-a5ad-f228" targetId="1529-793d-481b-82bf"/>
     <entryLink import="true" name="Kabalite Warriors" hidden="false" type="selectionEntry" id="c45d-8c86-3405-8215" targetId="d20b-783-ccf6-b29d"/>
-    <entryLink import="true" name="Lelith Hesperax" hidden="true" type="selectionEntry" id="fb3e-8f1b-63d7-f761" targetId="ae1b-1a96-5b4c-cecc"/>
+    <entryLink import="true" name="Lelith Hesperax" hidden="false" type="selectionEntry" id="fb3e-8f1b-63d7-f761" targetId="ae1b-1a96-5b4c-cecc"/>
     <entryLink import="true" name="Mandrakes" hidden="false" type="selectionEntry" id="a128-870b-3f8b-59e0" targetId="6a3a-7973-b509-532e"/>
     <entryLink import="true" name="Succubus" hidden="false" type="selectionEntry" id="70b6-9051-a20e-365f" targetId="b5a9-c802-10f0-6768"/>
     <entryLink import="true" name="Wracks" hidden="false" type="selectionEntry" id="20c5-c1e3-ebe4-8fcc" targetId="2659-7a1b-3ce6-8e4b"/>
@@ -29,5 +21,8 @@
         <entryLink import="true" name="Ascendant Lords" hidden="false" id="fc81-f619-fdff-3444" type="selectionEntryGroup" targetId="4d2d-b519-7542-788f"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Urien Rakarth [Legends]" hidden="false" id="ced4-8dba-5f25-9394" type="selectionEntry" targetId="76c4-e2ba-e247-560e"/>
+    <entryLink import="true" name="Grotesques [Legends]" hidden="false" id="ae53-5227-3fae-7126" type="selectionEntry" targetId="d729-7e1f-93a9-b1c5"/>
+    <entryLink import="true" name="Haemonculus" hidden="false" id="d39b-8c91-7bc2-5a58" type="selectionEntry" targetId="32ff-aec4-9669-c8a2"/>
   </entryLinks>
 </catalogue>
